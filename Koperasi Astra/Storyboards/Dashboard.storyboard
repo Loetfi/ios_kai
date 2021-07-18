@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jFV-re-b4K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard Navigation View Controller-->
+        <scene sceneID="2QM-1v-FwI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0F-Sf-Hfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="DashboardNavigationViewController" navigationBarHidden="YES" id="jFV-re-b4K" customClass="DashboardNavigationViewController" customModule="Koperasi_Astra" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="23w-gb-qvM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.59215686270000001" green="0.28627450980000002" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Js0-SD-PcO" kind="relationship" relationship="rootViewController" id="nDv-xA-U2Z"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1378" y="-429"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="Ldl-cN-Kkv">
+            <objects>
+                <tabBarController storyboardIdentifier="DashboardViewController" id="Js0-SD-PcO" customClass="DashboardViewController" customModule="Koperasi_Astra" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Ios-ES-Sbg">
+                        <nil key="title"/>
+                        <rightBarButtonItems>
+                            <barButtonItem id="je5-Lf-VBj">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem id="4oL-g5-IkX">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem id="vGp-4T-xno">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KNe-fF-jOz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="green03"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rik-rj-cpI" kind="relationship" relationship="viewControllers" id="aZi-3c-z0k"/>
+                        <segue destination="h3g-Zs-lxE" kind="relationship" relationship="viewControllers" id="LUR-91-it2"/>
+                        <segue destination="g24-sQ-oe8" kind="relationship" relationship="viewControllers" id="t2A-f1-0hr"/>
+                        <segue destination="b0N-2W-tcB" kind="relationship" relationship="viewControllers" id="aQy-fK-W2R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsP-75-IfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484.05797101449281" y="-428.57142857142856"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="HDP-AO-MbL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="rik-rj-cpI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uZ3-Wc-iUP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbF-Va-h8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="-569"/>
+        </scene>
+        <!--Service-->
+        <scene sceneID="795-9P-w85">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Service" id="h3g-Zs-lxE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Service" image="icServices" id="rwq-QG-VaN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmk-uM-Ehg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="-494"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="Xmq-Fi-L57">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" id="b0N-2W-tcB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="User" image="icUser" id="6MC-TB-nzV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBb-r1-eMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="-346"/>
+        </scene>
+        <!--Credit-->
+        <scene sceneID="RQs-YO-qUz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Credit" id="g24-sQ-oe8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Credit" image="icCredit" id="Ui4-rh-9BA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuX-WZ-z51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="-429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icCredit" width="25.5" height="25"/>
+        <image name="icServices" width="25.5" height="25"/>
+        <image name="icUser" width="25.5" height="25"/>
+        <namedColor name="green03">
+            <color red="0.2627450980392157" green="0.6588235294117647" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

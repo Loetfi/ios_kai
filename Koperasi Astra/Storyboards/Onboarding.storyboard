@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1jE-07-3s2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="NIa-kb-hDc">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="tRH-cN-Af1" customClass="OnboardingViewController" customModule="Koperasi_Astra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="32A-th-H2I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9QJ-Ff-vR1">
+                                <rect key="frame" x="20" y="404" width="374" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebt-T7-wa4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                        <color key="textColor" name="black01"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rg-KJ-iHy">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" name="black02"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrE-rz-3UW" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="40" y="144" width="334" height="220"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Its-He-VEi"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="tRH-cN-Af1" id="T7V-3M-oUk"/>
+                                    <outlet property="delegate" destination="tRH-cN-Af1" id="E4L-nN-KpR"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T59-FU-rTx" customClass="FSPageControl" customModule="FSPagerView">
+                                <rect key="frame" x="20" y="516" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7X8-wf-x0Q"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-et-dUr" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
+                                <rect key="frame" x="16" y="782" width="382" height="40"/>
+                                <color key="backgroundColor" name="green03"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="N2c-e3-bKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" name="green03"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" name="green03"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSignInAction:" destination="tRH-cN-Af1" eventType="touchUpInside" id="cTH-Cv-LiM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UkC-B2-ifV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T59-FU-rTx" firstAttribute="centerX" secondItem="UkC-B2-ifV" secondAttribute="centerX" id="BEZ-ZE-NtQ"/>
+                            <constraint firstItem="UkC-B2-ifV" firstAttribute="trailing" secondItem="T59-FU-rTx" secondAttribute="trailing" constant="20" id="Cro-QZ-y9r"/>
+                            <constraint firstItem="UkC-B2-ifV" firstAttribute="trailing" secondItem="9QJ-Ff-vR1" secondAttribute="trailing" constant="20" id="KU7-N4-SjH"/>
+                            <constraint firstItem="UkC-B2-ifV" firstAttribute="trailing" secondItem="JrE-rz-3UW" secondAttribute="trailing" constant="40" id="P5y-eS-X8S"/>
+                            <constraint firstItem="9QJ-Ff-vR1" firstAttribute="top" secondItem="JrE-rz-3UW" secondAttribute="bottom" constant="40" id="Q1N-PN-Zf1"/>
+                            <constraint firstItem="T59-FU-rTx" firstAttribute="leading" secondItem="UkC-B2-ifV" secondAttribute="leading" constant="20" id="TAB-WE-7HL"/>
+                            <constraint firstItem="UkC-B2-ifV" firstAttribute="trailing" secondItem="LYm-et-dUr" secondAttribute="trailing" constant="16" id="XzW-4X-vhF"/>
+                            <constraint firstItem="T59-FU-rTx" firstAttribute="top" secondItem="9QJ-Ff-vR1" secondAttribute="bottom" constant="52" id="Y8J-T7-fFk"/>
+                            <constraint firstItem="UkC-B2-ifV" firstAttribute="bottom" secondItem="LYm-et-dUr" secondAttribute="bottom" constant="40" id="frf-HW-uJl"/>
+                            <constraint firstItem="JrE-rz-3UW" firstAttribute="top" secondItem="UkC-B2-ifV" secondAttribute="top" constant="100" id="il7-n9-j5e"/>
+                            <constraint firstItem="9QJ-Ff-vR1" firstAttribute="leading" secondItem="UkC-B2-ifV" secondAttribute="leading" constant="20" id="lSt-f1-edX"/>
+                            <constraint firstItem="JrE-rz-3UW" firstAttribute="leading" secondItem="UkC-B2-ifV" secondAttribute="leading" constant="40" id="pK3-nB-N4e"/>
+                            <constraint firstItem="LYm-et-dUr" firstAttribute="leading" secondItem="UkC-B2-ifV" secondAttribute="leading" constant="16" id="qpq-sl-9Xb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qjc-fs-nKc"/>
+                    <connections>
+                        <outlet property="btnSignIn" destination="LYm-et-dUr" id="p5I-s1-qoW"/>
+                        <outlet property="labelSubtitle" destination="2rg-KJ-iHy" id="qn1-4k-rjl"/>
+                        <outlet property="labelTitle" destination="ebt-T7-wa4" id="O7E-aY-Nd5"/>
+                        <outlet property="pagerViewControl" destination="T59-FU-rTx" id="XEH-63-q3o"/>
+                        <outlet property="pagerViewImage" destination="JrE-rz-3UW" id="V0O-dq-XPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMG-nC-4Kd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1975.36231884058" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A3K-Ys-KbR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1jE-07-3s2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HX7-pD-bXd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tRH-cN-Af1" kind="relationship" relationship="rootViewController" id="42c-TF-6Pt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8R-Fu-rhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065.217391304348" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="LYm-et-dUr">
+            <size key="intrinsicContentSize" width="59" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="black01">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black02">
+            <color red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green03">
+            <color red="0.2627450980392157" green="0.6588235294117647" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

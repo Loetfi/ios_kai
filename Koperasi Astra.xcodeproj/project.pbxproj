@@ -3,27 +3,127 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BD206EE2DCE8F9991B22954 /* Pods_Koperasi_Astra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */; };
 		EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA93268F392F0049A603 /* AppDelegate.swift */; };
-		EE0AEA96268F392F0049A603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA95268F392F0049A603 /* SceneDelegate.swift */; };
-		EE0AEA98268F392F0049A603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA97268F392F0049A603 /* ViewController.swift */; };
-		EE0AEA9B268F392F0049A603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA99268F392F0049A603 /* Main.storyboard */; };
 		EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA9C268F39310049A603 /* Assets.xcassets */; };
-		EE0AEAA0268F39310049A603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA9E268F39310049A603 /* LaunchScreen.storyboard */; };
+		EE24FC4F26A33E0600A44307 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC4E26A33E0600A44307 /* Home.storyboard */; };
+		EE24FC5226A33E8300A44307 /* Service.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC5126A33E8300A44307 /* Service.storyboard */; };
+		EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC5426A33E9000A44307 /* Credit.storyboard */; };
+		EE24FC5826A33E9E00A44307 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC5726A33E9E00A44307 /* User.storyboard */; };
+		EE24FC5C26A46A2900A44307 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC5B26A46A2900A44307 /* UserViewController.swift */; };
+		EE24FC6226A46A7500A44307 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC6126A46A7500A44307 /* CreditViewController.swift */; };
+		EE24FC6626A46A7F00A44307 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC6526A46A7F00A44307 /* ServiceViewController.swift */; };
+		EE24FC6926A46C1C00A44307 /* DashboardNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC6826A46C1C00A44307 /* DashboardNavigationViewController.swift */; };
+		EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC6C26A477D200A44307 /* NavigationBar.swift */; };
+		EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC6F26A477F400A44307 /* NavigationBar.xib */; };
+		EE24FC7326A4790F00A44307 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC7226A4790F00A44307 /* Lato-Bold.ttf */; };
+		EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F14F2695C522002C6C8A /* LaunchScreenViewController.swift */; };
+		EE43F1542695C542002C6C8A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1532695C542002C6C8A /* SplashScreen.storyboard */; };
+		EE43F1582695C59C002C6C8A /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F1572695C59C002C6C8A /* ApiHelper.swift */; };
+		EE43F15B2695C5F7002C6C8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F15A2695C5F7002C6C8A /* Constants.swift */; };
+		EE43F15E2695C989002C6C8A /* UserAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F15D2695C989002C6C8A /* UserAuthViewModel.swift */; };
+		EE43F1622695CA23002C6C8A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F1602695CA23002C6C8A /* CardView.swift */; };
+		EE43F1632695CA23002C6C8A /* ButtonTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F1612695CA23002C6C8A /* ButtonTemplate.swift */; };
+		EE43F1782695CAE8002C6C8A /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1662695CAE4002C6C8A /* Poppins-Regular.otf */; };
+		EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1672695CAE4002C6C8A /* Poppins-SemiBoldItalic.otf */; };
+		EE43F17A2695CAE8002C6C8A /* Poppins-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1682695CAE5002C6C8A /* Poppins-Thin.otf */; };
+		EE43F17B2695CAE8002C6C8A /* Poppins-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1692695CAE5002C6C8A /* Poppins-Italic.otf */; };
+		EE43F17C2695CAE8002C6C8A /* Poppins-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16A2695CAE5002C6C8A /* Poppins-BoldItalic.otf */; };
+		EE43F17D2695CAE8002C6C8A /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16B2695CAE5002C6C8A /* Poppins-Bold.otf */; };
+		EE43F17E2695CAE8002C6C8A /* Poppins-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16C2695CAE6002C6C8A /* Poppins-MediumItalic.otf */; };
+		EE43F17F2695CAE8002C6C8A /* Poppins-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16D2695CAE6002C6C8A /* Poppins-ThinItalic.otf */; };
+		EE43F1802695CAE8002C6C8A /* Poppins-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16E2695CAE6002C6C8A /* Poppins-Black.otf */; };
+		EE43F1812695CAE8002C6C8A /* Poppins-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F16F2695CAE6002C6C8A /* Poppins-LightItalic.otf */; };
+		EE43F1822695CAE8002C6C8A /* Poppins-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1702695CAE7002C6C8A /* Poppins-ExtraLightItalic.otf */; };
+		EE43F1832695CAE8002C6C8A /* Poppins-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1712695CAE7002C6C8A /* Poppins-ExtraLight.otf */; };
+		EE43F1842695CAE8002C6C8A /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1722695CAE7002C6C8A /* Poppins-Medium.otf */; };
+		EE43F1852695CAE8002C6C8A /* Poppins-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1732695CAE7002C6C8A /* Poppins-BlackItalic.otf */; };
+		EE43F1862695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1742695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf */; };
+		EE43F1872695CAE8002C6C8A /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1752695CAE8002C6C8A /* Poppins-SemiBold.otf */; };
+		EE43F1882695CAE8002C6C8A /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1762695CAE8002C6C8A /* Poppins-Light.otf */; };
+		EE43F1892695CAE8002C6C8A /* Poppins-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1772695CAE8002C6C8A /* Poppins-ExtraBold.otf */; };
+		EE43F18F269E8D39002C6C8A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F18E269E8D39002C6C8A /* BaseViewController.swift */; };
+		EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F191269E8DA8002C6C8A /* Reachability.swift */; };
+		EE43F196269E908B002C6C8A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F195269E908B002C6C8A /* GradientView.swift */; };
+		EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */; };
+		EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CA2695BA4800FBCA76 /* Storyboards.swift */; };
+		EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */; };
+		EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */; };
+		EECE83D62695BAAE00FBCA76 /* LoginRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECE83D52695BAAE00FBCA76 /* LoginRegister.storyboard */; };
+		EECE83D92695BABB00FBCA76 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECE83D82695BABB00FBCA76 /* Dashboard.storyboard */; };
+		EECE83DC2695BAF900FBCA76 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83DB2695BAF900FBCA76 /* RegisterViewController.swift */; };
+		EECE83E12695BD0900FBCA76 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECE83E02695BD0900FBCA76 /* Onboarding.storyboard */; };
+		EECE83E62695BD3300FBCA76 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83E52695BD3300FBCA76 /* OnboardingViewController.swift */; };
+		EECE83ED2695BD8B00FBCA76 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83EC2695BD8B00FBCA76 /* OtpViewController.swift */; };
+		EECE83F02695BDAD00FBCA76 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83EF2695BDAD00FBCA76 /* ForgotPasswordViewController.swift */; };
+		EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83F42695BE5200FBCA76 /* TermsConditionsViewController.swift */; };
+		EECE83F82695BE7800FBCA76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83F72695BE7800FBCA76 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Koperasi_Astra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA27E239561319B2F8F9EDD7 /* Pods-Koperasi Astra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koperasi Astra.debug.xcconfig"; path = "Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra.debug.xcconfig"; sourceTree = "<group>"; };
+		E2393E63911ECBFD90B8C1C8 /* Pods-Koperasi Astra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koperasi Astra.release.xcconfig"; path = "Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra.release.xcconfig"; sourceTree = "<group>"; };
 		EE0AEA90268F392F0049A603 /* Koperasi Astra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koperasi Astra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0AEA93268F392F0049A603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE0AEA95268F392F0049A603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE0AEA97268F392F0049A603 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE0AEA9A268F392F0049A603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE0AEA9C268F39310049A603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE0AEA9F268F39310049A603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE0AEAA1268F39310049A603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE24FC4E26A33E0600A44307 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EE24FC5126A33E8300A44307 /* Service.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Service.storyboard; sourceTree = "<group>"; };
+		EE24FC5426A33E9000A44307 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
+		EE24FC5726A33E9E00A44307 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		EE24FC5B26A46A2900A44307 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		EE24FC6126A46A7500A44307 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		EE24FC6526A46A7F00A44307 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		EE24FC6826A46C1C00A44307 /* DashboardNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardNavigationViewController.swift; sourceTree = "<group>"; };
+		EE24FC6C26A477D200A44307 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		EE24FC6F26A477F400A44307 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		EE24FC7226A4790F00A44307 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		EE43F14F2695C522002C6C8A /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		EE43F1532695C542002C6C8A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		EE43F1572695C59C002C6C8A /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		EE43F15A2695C5F7002C6C8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE43F15D2695C989002C6C8A /* UserAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewModel.swift; sourceTree = "<group>"; };
+		EE43F1602695CA23002C6C8A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EE43F1612695CA23002C6C8A /* ButtonTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTemplate.swift; sourceTree = "<group>"; };
+		EE43F1662695CAE4002C6C8A /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		EE43F1672695CAE4002C6C8A /* Poppins-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		EE43F1682695CAE5002C6C8A /* Poppins-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.otf"; sourceTree = "<group>"; };
+		EE43F1692695CAE5002C6C8A /* Poppins-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.otf"; sourceTree = "<group>"; };
+		EE43F16A2695CAE5002C6C8A /* Poppins-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.otf"; sourceTree = "<group>"; };
+		EE43F16B2695CAE5002C6C8A /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		EE43F16C2695CAE6002C6C8A /* Poppins-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.otf"; sourceTree = "<group>"; };
+		EE43F16D2695CAE6002C6C8A /* Poppins-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.otf"; sourceTree = "<group>"; };
+		EE43F16E2695CAE6002C6C8A /* Poppins-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.otf"; sourceTree = "<group>"; };
+		EE43F16F2695CAE6002C6C8A /* Poppins-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.otf"; sourceTree = "<group>"; };
+		EE43F1702695CAE7002C6C8A /* Poppins-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		EE43F1712695CAE7002C6C8A /* Poppins-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.otf"; sourceTree = "<group>"; };
+		EE43F1722695CAE7002C6C8A /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		EE43F1732695CAE7002C6C8A /* Poppins-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.otf"; sourceTree = "<group>"; };
+		EE43F1742695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		EE43F1752695CAE8002C6C8A /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		EE43F1762695CAE8002C6C8A /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		EE43F1772695CAE8002C6C8A /* Poppins-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.otf"; sourceTree = "<group>"; };
+		EE43F18E269E8D39002C6C8A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EE43F191269E8DA8002C6C8A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EE43F195269E908B002C6C8A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		EECE83CA2695BA4800FBCA76 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		EECE83D52695BAAE00FBCA76 /* LoginRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginRegister.storyboard; sourceTree = "<group>"; };
+		EECE83D82695BABB00FBCA76 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		EECE83DB2695BAF900FBCA76 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EECE83E02695BD0900FBCA76 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		EECE83E52695BD3300FBCA76 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EECE83EC2695BD8B00FBCA76 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		EECE83EF2695BDAD00FBCA76 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		EECE83F42695BE5200FBCA76 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
+		EECE83F72695BE7800FBCA76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +131,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD206EE2DCE8F9991B22954 /* Pods_Koperasi_Astra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1426513427AC11F2A860BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA27E239561319B2F8F9EDD7 /* Pods-Koperasi Astra.debug.xcconfig */,
+				E2393E63911ECBFD90B8C1C8 /* Pods-Koperasi Astra.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5E2292F2F65E656C2AB6D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE0AEA87268F392F0049A603 = {
 			isa = PBXGroup;
 			children = (
 				EE0AEA92268F392F0049A603 /* Koperasi Astra */,
 				EE0AEA91268F392F0049A603 /* Products */,
+				1B1426513427AC11F2A860BB /* Pods */,
+				E5E2292F2F65E656C2AB6D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +177,182 @@
 			isa = PBXGroup;
 			children = (
 				EE0AEA93268F392F0049A603 /* AppDelegate.swift */,
-				EE0AEA95268F392F0049A603 /* SceneDelegate.swift */,
-				EE0AEA97268F392F0049A603 /* ViewController.swift */,
-				EE0AEA99268F392F0049A603 /* Main.storyboard */,
 				EE0AEA9C268F39310049A603 /* Assets.xcassets */,
-				EE0AEA9E268F39310049A603 /* LaunchScreen.storyboard */,
 				EE0AEAA1268F39310049A603 /* Info.plist */,
+				EE43F1652695CABF002C6C8A /* Fonts */,
+				EECE83C92695BA2000FBCA76 /* Configurations */,
+				EECE83C82695BA1A00FBCA76 /* Utilities */,
+				EECE83C72695BA1000FBCA76 /* Custom Views */,
+				EECE83C62695BA0600FBCA76 /* View Models */,
+				EECE83C52695B9F100FBCA76 /* Model Data */,
+				EECE83C42695B5CE00FBCA76 /* View Controllers */,
+				EECE83C32695B5C900FBCA76 /* Storyboards */,
 			);
 			path = "Koperasi Astra";
+			sourceTree = "<group>";
+		};
+		EE24FC5A26A46A1900A44307 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC5B26A46A2900A44307 /* UserViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EE24FC5F26A46A6300A44307 /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC6126A46A7500A44307 /* CreditViewController.swift */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		EE24FC6026A46A6800A44307 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC6526A46A7F00A44307 /* ServiceViewController.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE24FC6B26A4776F00A44307 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC6C26A477D200A44307 /* NavigationBar.swift */,
+				EE24FC6F26A477F400A44307 /* NavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		EE43F1652695CABF002C6C8A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC7226A4790F00A44307 /* Lato-Bold.ttf */,
+				EE43F16E2695CAE6002C6C8A /* Poppins-Black.otf */,
+				EE43F1732695CAE7002C6C8A /* Poppins-BlackItalic.otf */,
+				EE43F16B2695CAE5002C6C8A /* Poppins-Bold.otf */,
+				EE43F16A2695CAE5002C6C8A /* Poppins-BoldItalic.otf */,
+				EE43F1772695CAE8002C6C8A /* Poppins-ExtraBold.otf */,
+				EE43F1742695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf */,
+				EE43F1712695CAE7002C6C8A /* Poppins-ExtraLight.otf */,
+				EE43F1702695CAE7002C6C8A /* Poppins-ExtraLightItalic.otf */,
+				EE43F1692695CAE5002C6C8A /* Poppins-Italic.otf */,
+				EE43F1762695CAE8002C6C8A /* Poppins-Light.otf */,
+				EE43F16F2695CAE6002C6C8A /* Poppins-LightItalic.otf */,
+				EE43F1722695CAE7002C6C8A /* Poppins-Medium.otf */,
+				EE43F16C2695CAE6002C6C8A /* Poppins-MediumItalic.otf */,
+				EE43F1662695CAE4002C6C8A /* Poppins-Regular.otf */,
+				EE43F1752695CAE8002C6C8A /* Poppins-SemiBold.otf */,
+				EE43F1672695CAE4002C6C8A /* Poppins-SemiBoldItalic.otf */,
+				EE43F1682695CAE5002C6C8A /* Poppins-Thin.otf */,
+				EE43F16D2695CAE6002C6C8A /* Poppins-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EECE83C32695B5C900FBCA76 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EECE83CA2695BA4800FBCA76 /* Storyboards.swift */,
+				EECE83D52695BAAE00FBCA76 /* LoginRegister.storyboard */,
+				EECE83D82695BABB00FBCA76 /* Dashboard.storyboard */,
+				EECE83E02695BD0900FBCA76 /* Onboarding.storyboard */,
+				EE43F1532695C542002C6C8A /* SplashScreen.storyboard */,
+				EE24FC4E26A33E0600A44307 /* Home.storyboard */,
+				EE24FC5126A33E8300A44307 /* Service.storyboard */,
+				EE24FC5426A33E9000A44307 /* Credit.storyboard */,
+				EE24FC5726A33E9E00A44307 /* User.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EECE83C42695B5CE00FBCA76 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC6026A46A6800A44307 /* Service */,
+				EE24FC5F26A46A6300A44307 /* Credit */,
+				EE24FC5A26A46A1900A44307 /* User */,
+				EE43F18E269E8D39002C6C8A /* BaseViewController.swift */,
+				EECE83F22695BDC600FBCA76 /* Home */,
+				EECE83E42695BD2400FBCA76 /* Onboarding */,
+				EECE83E32695BD0F00FBCA76 /* Login & Register */,
+				EE24FC6826A46C1C00A44307 /* DashboardNavigationViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EECE83C52695B9F100FBCA76 /* Model Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Data";
+			sourceTree = "<group>";
+		};
+		EECE83C62695BA0600FBCA76 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE43F15D2695C989002C6C8A /* UserAuthViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EECE83C72695BA1000FBCA76 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE24FC6B26A4776F00A44307 /* NavigationBar */,
+				EE43F1612695CA23002C6C8A /* ButtonTemplate.swift */,
+				EE43F1602695CA23002C6C8A /* CardView.swift */,
+				EE43F195269E908B002C6C8A /* GradientView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EECE83C82695BA1A00FBCA76 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE43F1572695C59C002C6C8A /* ApiHelper.swift */,
+				EE43F15A2695C5F7002C6C8A /* Constants.swift */,
+				EE43F191269E8DA8002C6C8A /* Reachability.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EECE83C92695BA2000FBCA76 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		EECE83E32695BD0F00FBCA76 /* Login & Register */ = {
+			isa = PBXGroup;
+			children = (
+				EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */,
+				EECE83DB2695BAF900FBCA76 /* RegisterViewController.swift */,
+				EECE83EC2695BD8B00FBCA76 /* OtpViewController.swift */,
+				EECE83EF2695BDAD00FBCA76 /* ForgotPasswordViewController.swift */,
+				EECE83F42695BE5200FBCA76 /* TermsConditionsViewController.swift */,
+				EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */,
+			);
+			path = "Login & Register";
+			sourceTree = "<group>";
+		};
+		EECE83E42695BD2400FBCA76 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EECE83E52695BD3300FBCA76 /* OnboardingViewController.swift */,
+				EE43F14F2695C522002C6C8A /* LaunchScreenViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EECE83F22695BDC600FBCA76 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */,
+				EECE83F72695BE7800FBCA76 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +362,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE0AEAA4268F39310049A603 /* Build configuration list for PBXNativeTarget "Koperasi Astra" */;
 			buildPhases = (
+				8EF4D32472198899088AA843 /* [CP] Check Pods Manifest.lock */,
 				EE0AEA8C268F392F0049A603 /* Sources */,
 				EE0AEA8D268F392F0049A603 /* Frameworks */,
 				EE0AEA8E268F392F0049A603 /* Resources */,
+				BA0208485D9424D818647F7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,45 +414,116 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0AEAA0268F39310049A603 /* LaunchScreen.storyboard in Resources */,
+				EE43F17E2695CAE8002C6C8A /* Poppins-MediumItalic.otf in Resources */,
+				EE43F1812695CAE8002C6C8A /* Poppins-LightItalic.otf in Resources */,
+				EE43F1802695CAE8002C6C8A /* Poppins-Black.otf in Resources */,
+				EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */,
+				EE43F17A2695CAE8002C6C8A /* Poppins-Thin.otf in Resources */,
+				EE43F1782695CAE8002C6C8A /* Poppins-Regular.otf in Resources */,
+				EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */,
+				EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */,
+				EECE83E12695BD0900FBCA76 /* Onboarding.storyboard in Resources */,
+				EE43F17C2695CAE8002C6C8A /* Poppins-BoldItalic.otf in Resources */,
+				EE43F1852695CAE8002C6C8A /* Poppins-BlackItalic.otf in Resources */,
+				EE43F1842695CAE8002C6C8A /* Poppins-Medium.otf in Resources */,
+				EECE83D92695BABB00FBCA76 /* Dashboard.storyboard in Resources */,
+				EE24FC5226A33E8300A44307 /* Service.storyboard in Resources */,
+				EE43F17B2695CAE8002C6C8A /* Poppins-Italic.otf in Resources */,
+				EE43F1832695CAE8002C6C8A /* Poppins-ExtraLight.otf in Resources */,
+				EECE83D62695BAAE00FBCA76 /* LoginRegister.storyboard in Resources */,
+				EE43F1822695CAE8002C6C8A /* Poppins-ExtraLightItalic.otf in Resources */,
+				EE24FC4F26A33E0600A44307 /* Home.storyboard in Resources */,
+				EE43F17F2695CAE8002C6C8A /* Poppins-ThinItalic.otf in Resources */,
+				EE43F1542695C542002C6C8A /* SplashScreen.storyboard in Resources */,
+				EE43F1892695CAE8002C6C8A /* Poppins-ExtraBold.otf in Resources */,
+				EE24FC7326A4790F00A44307 /* Lato-Bold.ttf in Resources */,
 				EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */,
-				EE0AEA9B268F392F0049A603 /* Main.storyboard in Resources */,
+				EE43F1882695CAE8002C6C8A /* Poppins-Light.otf in Resources */,
+				EE43F17D2695CAE8002C6C8A /* Poppins-Bold.otf in Resources */,
+				EE43F1862695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf in Resources */,
+				EE43F1872695CAE8002C6C8A /* Poppins-SemiBold.otf in Resources */,
+				EE24FC5826A33E9E00A44307 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EF4D32472198899088AA843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Koperasi Astra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0208485D9424D818647F7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE0AEA8C268F392F0049A603 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0AEA98268F392F0049A603 /* ViewController.swift in Sources */,
+				EE43F196269E908B002C6C8A /* GradientView.swift in Sources */,
+				EE43F1582695C59C002C6C8A /* ApiHelper.swift in Sources */,
+				EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */,
+				EECE83E62695BD3300FBCA76 /* OnboardingViewController.swift in Sources */,
+				EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */,
+				EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */,
+				EE43F1622695CA23002C6C8A /* CardView.swift in Sources */,
+				EE24FC6626A46A7F00A44307 /* ServiceViewController.swift in Sources */,
+				EECE83ED2695BD8B00FBCA76 /* OtpViewController.swift in Sources */,
+				EE24FC5C26A46A2900A44307 /* UserViewController.swift in Sources */,
+				EE24FC6926A46C1C00A44307 /* DashboardNavigationViewController.swift in Sources */,
+				EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */,
+				EECE83F02695BDAD00FBCA76 /* ForgotPasswordViewController.swift in Sources */,
+				EE43F18F269E8D39002C6C8A /* BaseViewController.swift in Sources */,
+				EE43F1632695CA23002C6C8A /* ButtonTemplate.swift in Sources */,
+				EECE83F82695BE7800FBCA76 /* HomeViewController.swift in Sources */,
+				EE43F15E2695C989002C6C8A /* UserAuthViewModel.swift in Sources */,
+				EE43F15B2695C5F7002C6C8A /* Constants.swift in Sources */,
+				EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */,
+				EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */,
+				EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */,
+				EECE83DC2695BAF900FBCA76 /* RegisterViewController.swift in Sources */,
+				EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */,
 				EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */,
-				EE0AEA96268F392F0049A603 /* SceneDelegate.swift in Sources */,
+				EE24FC6226A46A7500A44307 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EE0AEA99268F392F0049A603 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE0AEA9A268F392F0049A603 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EE0AEA9E268F39310049A603 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE0AEA9F268F39310049A603 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EE0AEAA2268F39310049A603 /* Debug */ = {
@@ -283,6 +644,7 @@
 		};
 		EE0AEAA5268F39310049A603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA27E239561319B2F8F9EDD7 /* Pods-Koperasi Astra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +664,7 @@
 		};
 		EE0AEAA6268F39310049A603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2393E63911ECBFD90B8C1C8 /* Pods-Koperasi Astra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

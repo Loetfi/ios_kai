@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OtD-Vp-r57">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Services-->
+        <scene sceneID="YHG-Vf-ad9">
+            <objects>
+                <viewController id="OtD-Vp-r57" customClass="ServiceViewController" customModule="Koperasi_Astra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DhH-JO-HU6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-K3-qH7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUW-hp-n8p">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU7-R4-LC5">
+                                                <rect key="frame" x="20" y="20" width="66" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="UU7-R4-LC5" firstAttribute="leading" secondItem="bUW-hp-n8p" secondAttribute="leading" constant="20" id="qK1-B1-XlD"/>
+                                            <constraint firstAttribute="bottom" secondItem="UU7-R4-LC5" secondAttribute="bottom" constant="20" id="sKl-tf-GEF"/>
+                                            <constraint firstAttribute="trailing" secondItem="UU7-R4-LC5" secondAttribute="trailing" constant="20" id="uSV-s0-s9f"/>
+                                            <constraint firstItem="UU7-R4-LC5" firstAttribute="top" secondItem="bUW-hp-n8p" secondAttribute="top" constant="20" id="ucL-Ub-liW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bUW-hp-n8p" secondAttribute="bottom" constant="20" id="0WE-YK-OdO"/>
+                                    <constraint firstItem="bUW-hp-n8p" firstAttribute="top" secondItem="gFE-K3-qH7" secondAttribute="top" id="8W8-bE-EaR"/>
+                                    <constraint firstAttribute="trailing" secondItem="bUW-hp-n8p" secondAttribute="trailing" id="Xo2-pY-rpb"/>
+                                    <constraint firstItem="bUW-hp-n8p" firstAttribute="leading" secondItem="gFE-K3-qH7" secondAttribute="leading" id="tVx-Xq-w3L"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LBg-qB-QMc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gFE-K3-qH7" firstAttribute="width" secondItem="LBg-qB-QMc" secondAttribute="width" id="Ctv-kk-MV0"/>
+                            <constraint firstItem="LBg-qB-QMc" firstAttribute="trailing" secondItem="gFE-K3-qH7" secondAttribute="trailing" id="JAC-fg-pVx"/>
+                            <constraint firstItem="gFE-K3-qH7" firstAttribute="top" secondItem="LBg-qB-QMc" secondAttribute="top" id="Qhb-CY-OVs"/>
+                            <constraint firstItem="gFE-K3-qH7" firstAttribute="leading" secondItem="LBg-qB-QMc" secondAttribute="leading" id="Ugf-qs-GJM"/>
+                            <constraint firstItem="LBg-qB-QMc" firstAttribute="bottom" secondItem="gFE-K3-qH7" secondAttribute="bottom" id="ZUk-wc-e14"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Services" image="icServices" id="6si-Wk-f2H">
+                        <color key="badgeColor" name="green03"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGG-Kf-tz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="-163.39285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icServices" width="25.5" height="25"/>
+        <namedColor name="green03">
+            <color red="0.2627450980392157" green="0.6588235294117647" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

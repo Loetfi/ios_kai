@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QMx-X7-NhS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit-->
+        <scene sceneID="1U1-Kh-pd2">
+            <objects>
+                <viewController id="QMx-X7-NhS" customClass="CreditViewController" customModule="Koperasi_Astra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SyP-ix-lNO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-mF-IFo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sp-Xu-DRt">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3D-Bz-M2y">
+                                                <rect key="frame" x="20" y="20" width="47" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="m3D-Bz-M2y" firstAttribute="leading" secondItem="0sp-Xu-DRt" secondAttribute="leading" constant="20" id="6bP-QF-cvP"/>
+                                            <constraint firstAttribute="bottom" secondItem="m3D-Bz-M2y" secondAttribute="bottom" constant="20" id="YdF-V3-yHq"/>
+                                            <constraint firstItem="m3D-Bz-M2y" firstAttribute="top" secondItem="0sp-Xu-DRt" secondAttribute="top" constant="20" id="bQ2-lv-Rvo"/>
+                                            <constraint firstAttribute="trailing" secondItem="m3D-Bz-M2y" secondAttribute="trailing" constant="20" id="dcP-aN-W0n"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0sp-Xu-DRt" secondAttribute="bottom" constant="20" id="3SS-0Z-Ty8"/>
+                                    <constraint firstItem="0sp-Xu-DRt" firstAttribute="leading" secondItem="x0l-mF-IFo" secondAttribute="leading" id="JfM-ba-wcv"/>
+                                    <constraint firstItem="0sp-Xu-DRt" firstAttribute="top" secondItem="x0l-mF-IFo" secondAttribute="top" id="blE-aN-hQv"/>
+                                    <constraint firstAttribute="trailing" secondItem="0sp-Xu-DRt" secondAttribute="trailing" id="drs-8p-Q3Z"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZnB-i2-V7B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZnB-i2-V7B" firstAttribute="trailing" secondItem="x0l-mF-IFo" secondAttribute="trailing" id="N0N-Gg-5oH"/>
+                            <constraint firstItem="x0l-mF-IFo" firstAttribute="width" secondItem="ZnB-i2-V7B" secondAttribute="width" id="SYK-ie-xw3"/>
+                            <constraint firstItem="x0l-mF-IFo" firstAttribute="leading" secondItem="ZnB-i2-V7B" secondAttribute="leading" id="XZY-N4-iBp"/>
+                            <constraint firstItem="x0l-mF-IFo" firstAttribute="top" secondItem="ZnB-i2-V7B" secondAttribute="top" id="vLc-wg-IWO"/>
+                            <constraint firstItem="ZnB-i2-V7B" firstAttribute="bottom" secondItem="x0l-mF-IFo" secondAttribute="bottom" id="xcm-lC-QSC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Credit" image="icCredit" id="b8n-61-bHR">
+                        <color key="badgeColor" name="green03"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTw-XW-CN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="-163.39285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icCredit" width="25.5" height="25"/>
+        <namedColor name="green03">
+            <color red="0.2627450980392157" green="0.6588235294117647" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
