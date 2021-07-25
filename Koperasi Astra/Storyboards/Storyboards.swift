@@ -36,6 +36,12 @@ internal enum StoryboardScene {
 
         internal static let dashboardViewController = SceneType<DashboardViewController>(storyboard: Dashboard.self, identifier: "DashboardViewController")
     }
+    
+    internal enum BottomSheet: StoryboardType {
+        internal static let storyboardName = "BottomSheet"
+        
+        internal static let CollectionListViewController = SceneType<CollectionListViewController>(storyboard: BottomSheet.self, identifier: "CollectionListViewController")
+    }
 }
 
 internal protocol StoryboardType {

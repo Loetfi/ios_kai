@@ -32,6 +32,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/Reachability (~> 7.0)
     - GoogleUtilities/UserDefaults (~> 7.0)
+  - FittedSheets (2.4.0)
   - FSCalendar (2.8.2)
   - FSPagerView (0.8.3)
   - GoogleDataTransport (8.4.0):
@@ -73,6 +74,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Firebase/Messaging
+  - FittedSheets
   - FSCalendar
   - FSPagerView
   - Hero
@@ -93,6 +95,7 @@ SPEC REPOS:
     - FirebaseInstallations
     - FirebaseInstanceID
     - FirebaseMessaging
+    - FittedSheets
     - FSCalendar
     - FSPagerView
     - GoogleDataTransport
@@ -116,6 +119,7 @@ SPEC CHECKSUMS:
   FirebaseInstallations: bf2ec8dbf36ff4c91af6b9a003d15855757680c1
   FirebaseInstanceID: 5ad92c898e1328b66e8dd58811964d6fe4d334c3
   FirebaseMessaging: 76b3058cef7f339cf10db196e03bbbb2165fb5d7
+  FittedSheets: 470a7740a083156d711ab6ccd37d1d539005e6aa
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
@@ -130,6 +134,6 @@ SPEC CHECKSUMS:
   SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 589ccd32e452e7172b5f6f2e713cd48f60c7ed6f
+PODFILE CHECKSUM: b12b8c89bf4270219afcbd239cdf8c393a5fc8d1
 
 COCOAPODS: 1.10.1

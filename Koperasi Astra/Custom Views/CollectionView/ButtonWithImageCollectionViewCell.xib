@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ButtonWithImageCollectionViewCell" customModule="Koperasi_Astra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="112"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXe-tL-yWw">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="112"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiX-hz-rdk" customClass="GradientView" customModule="Koperasi_Astra" customModuleProvider="target">
+                                <rect key="frame" x="25" y="10" width="70" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-1W-6j5">
+                                        <rect key="frame" x="8" y="8.5" width="54" height="52"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6q2-Bp-Oer"/>
+                                    <constraint firstItem="Dp7-1W-6j5" firstAttribute="leading" secondItem="AiX-hz-rdk" secondAttribute="leading" constant="8" id="86k-TA-IMy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dp7-1W-6j5" secondAttribute="bottom" constant="8" id="BJe-jW-YYg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dp7-1W-6j5" secondAttribute="trailing" constant="8" id="IBc-Uy-5U5"/>
+                                    <constraint firstAttribute="width" constant="70" id="kwE-bO-HBv"/>
+                                    <constraint firstItem="Dp7-1W-6j5" firstAttribute="top" secondItem="AiX-hz-rdk" secondAttribute="top" constant="8" id="oR6-pM-tfB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.0" green="0.14117647059999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.2666666667" green="0.44705882349999998" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambil Foto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-b9-g4y">
+                                <rect key="frame" x="23" y="85" width="74.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D3K-b9-g4y" firstAttribute="top" secondItem="AiX-hz-rdk" secondAttribute="bottom" constant="5" id="Bza-TG-ORv"/>
+                            <constraint firstItem="AiX-hz-rdk" firstAttribute="centerX" secondItem="WXe-tL-yWw" secondAttribute="centerX" id="CBO-Z9-XJW"/>
+                            <constraint firstItem="AiX-hz-rdk" firstAttribute="top" secondItem="WXe-tL-yWw" secondAttribute="top" constant="10" id="NrX-md-k8o"/>
+                            <constraint firstItem="D3K-b9-g4y" firstAttribute="centerX" secondItem="WXe-tL-yWw" secondAttribute="centerX" id="m0S-st-vou"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WXe-tL-yWw" secondAttribute="trailing" id="96W-Zf-3Db"/>
+                <constraint firstItem="WXe-tL-yWw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I8z-2f-T03"/>
+                <constraint firstItem="WXe-tL-yWw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hDp-Hd-TXY"/>
+                <constraint firstAttribute="bottom" secondItem="WXe-tL-yWw" secondAttribute="bottom" id="rGf-wE-mD2"/>
+            </constraints>
+            <connections>
+                <outlet property="ivImage" destination="Dp7-1W-6j5" id="b8p-uo-t3A"/>
+                <outlet property="lblDescription" destination="D3K-b9-g4y" id="aFK-Er-tjT"/>
+                <outlet property="vGradient" destination="AiX-hz-rdk" id="Adr-FQ-DaI"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -606,24 +606,54 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tme-0K-UUa">
+                                                <rect key="frame" x="20" y="480" width="374" height="50"/>
+                                                <connections>
+                                                    <action selector="uploadKtpButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="jDv-Qr-gVc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoF-LA-AHb">
+                                                <rect key="frame" x="20" y="936" width="374" height="50"/>
+                                                <connections>
+                                                    <action selector="uploadCardButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="vAo-Iq-HoH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-we-rKw">
+                                                <rect key="frame" x="20" y="1012" width="374" height="50"/>
+                                                <connections>
+                                                    <action selector="uploadProfilePhotoButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="mdq-JR-eu1"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="Ilz-9h-w1d" firstAttribute="top" secondItem="SoF-LA-AHb" secondAttribute="top" id="14R-Fe-us1"/>
                                             <constraint firstAttribute="trailing" secondItem="2DK-7j-qwx" secondAttribute="trailing" constant="20" id="1Pv-cP-lcG"/>
+                                            <constraint firstItem="Ilz-9h-w1d" firstAttribute="trailing" secondItem="SoF-LA-AHb" secondAttribute="trailing" id="5e8-6o-kn6"/>
+                                            <constraint firstItem="Ilz-9h-w1d" firstAttribute="leading" secondItem="SoF-LA-AHb" secondAttribute="leading" id="7mE-fH-HOe"/>
                                             <constraint firstItem="Ilz-9h-w1d" firstAttribute="trailing" secondItem="ahc-F3-c9b" secondAttribute="trailing" constant="10" id="9Sw-t3-zgo"/>
                                             <constraint firstItem="Ls5-1A-WPF" firstAttribute="leading" secondItem="AQr-p1-4Jk" secondAttribute="leading" constant="20" id="BEa-9J-0ed"/>
+                                            <constraint firstItem="Tme-0K-UUa" firstAttribute="leading" secondItem="6MF-ca-87i" secondAttribute="leading" id="Bob-PE-GWb"/>
                                             <constraint firstItem="2DK-7j-qwx" firstAttribute="leading" secondItem="AQr-p1-4Jk" secondAttribute="leading" constant="20" id="CbF-iQ-4SA"/>
+                                            <constraint firstItem="Ilz-9h-w1d" firstAttribute="bottom" secondItem="SoF-LA-AHb" secondAttribute="bottom" id="EEN-ez-cvz"/>
+                                            <constraint firstItem="FJW-Sr-UgL" firstAttribute="trailing" secondItem="pjN-we-rKw" secondAttribute="trailing" id="Gi4-MW-QjJ"/>
                                             <constraint firstItem="Ilz-9h-w1d" firstAttribute="top" secondItem="ahc-F3-c9b" secondAttribute="top" id="Ivd-6s-2CB"/>
+                                            <constraint firstItem="FJW-Sr-UgL" firstAttribute="top" secondItem="pjN-we-rKw" secondAttribute="top" id="Jmc-Pv-bUp"/>
                                             <constraint firstAttribute="trailing" secondItem="tsY-oy-8Ea" secondAttribute="trailing" id="Lyh-wb-qgk"/>
                                             <constraint firstItem="7kq-86-XHu" firstAttribute="bottom" secondItem="6MF-ca-87i" secondAttribute="bottom" id="MpC-a5-aTX"/>
                                             <constraint firstItem="FJW-Sr-UgL" firstAttribute="trailing" secondItem="sVa-j5-37s" secondAttribute="trailing" constant="10" id="O4B-b9-FxO"/>
+                                            <constraint firstItem="Tme-0K-UUa" firstAttribute="bottom" secondItem="6MF-ca-87i" secondAttribute="bottom" id="Opv-al-wlA"/>
                                             <constraint firstItem="tsY-oy-8Ea" firstAttribute="top" secondItem="AQr-p1-4Jk" secondAttribute="top" id="PMX-jV-YH1"/>
+                                            <constraint firstItem="Tme-0K-UUa" firstAttribute="top" secondItem="6MF-ca-87i" secondAttribute="top" id="RzY-wd-X8Y"/>
                                             <constraint firstItem="7kq-86-XHu" firstAttribute="trailing" secondItem="6MF-ca-87i" secondAttribute="trailing" constant="-10" id="SyQ-Aa-Tmu"/>
                                             <constraint firstItem="Ilz-9h-w1d" firstAttribute="bottom" secondItem="ahc-F3-c9b" secondAttribute="bottom" id="We6-xg-UpS"/>
                                             <constraint firstItem="tsY-oy-8Ea" firstAttribute="leading" secondItem="AQr-p1-4Jk" secondAttribute="leading" id="X5Z-eS-aOB"/>
                                             <constraint firstItem="Ls5-1A-WPF" firstAttribute="top" secondItem="tsY-oy-8Ea" secondAttribute="bottom" constant="30" id="Z2n-oc-lii"/>
+                                            <constraint firstItem="FJW-Sr-UgL" firstAttribute="leading" secondItem="pjN-we-rKw" secondAttribute="leading" id="dbj-mE-sTm"/>
+                                            <constraint firstItem="FJW-Sr-UgL" firstAttribute="bottom" secondItem="pjN-we-rKw" secondAttribute="bottom" id="dqL-1q-v4n"/>
                                             <constraint firstItem="wrs-r6-g6H" firstAttribute="centerX" secondItem="AQr-p1-4Jk" secondAttribute="centerX" id="euI-fr-t3O"/>
                                             <constraint firstItem="FJW-Sr-UgL" firstAttribute="bottom" secondItem="sVa-j5-37s" secondAttribute="bottom" id="fju-wS-xMe"/>
+                                            <constraint firstItem="Tme-0K-UUa" firstAttribute="trailing" secondItem="6MF-ca-87i" secondAttribute="trailing" id="iim-w2-p7c"/>
                                             <constraint firstItem="wrs-r6-g6H" firstAttribute="top" secondItem="2DK-7j-qwx" secondAttribute="bottom" constant="24" id="jqG-vd-Uhe"/>
                                             <constraint firstItem="7kq-86-XHu" firstAttribute="top" secondItem="6MF-ca-87i" secondAttribute="top" id="leh-Bv-yy5"/>
                                             <constraint firstItem="FJW-Sr-UgL" firstAttribute="top" secondItem="sVa-j5-37s" secondAttribute="top" id="ltQ-QA-7P1"/>
@@ -688,6 +718,9 @@
                     <navigationItem key="navigationItem" id="HTb-Jt-sGE"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="jGr-WV-cfk" id="EQv-Rg-pDN"/>
+                        <outlet property="btnUpIdCard" destination="SoF-LA-AHb" id="oSk-Rt-q5w"/>
+                        <outlet property="btnUpKtpPhoto" destination="Tme-0K-UUa" id="nH3-5V-BWs"/>
+                        <outlet property="btnUpProfilePhoto" destination="pjN-we-rKw" id="KjH-68-0i9"/>
                         <outlet property="navigationBar" destination="aZX-cY-rfj" id="20G-FP-oND"/>
                         <outlet property="tfCardId" destination="Ilz-9h-w1d" id="ZFB-sN-Rfo"/>
                         <outlet property="tfCompanyName" destination="X1O-i3-HBb" id="Ysx-Fx-RpE"/>
@@ -1552,6 +1585,7 @@ Astra International.</string>
                         <outlet property="navBar" destination="euB-2s-gzi" id="2Go-Hj-8bF"/>
                         <outlet property="svCheckSms" destination="wXQ-aH-LOf" id="trQ-tj-bzZ"/>
                         <outlet property="svTextfield" destination="fc9-St-Fgj" id="1Oq-v5-wx4"/>
+                        <outlet property="tfNik" destination="EZu-Kw-LeF" id="Bjk-eP-syV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h03-Nw-7nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

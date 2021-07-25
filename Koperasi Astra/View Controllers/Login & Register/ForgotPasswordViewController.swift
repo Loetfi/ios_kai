@@ -12,10 +12,12 @@ class ForgotPasswordViewController: BaseViewController {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var navBar: NavigationBar!
     
+    @IBOutlet weak var tfNik: UITextField!
     @IBOutlet weak var svCheckSms: UIStackView!
     @IBOutlet weak var svTextfield: UIStackView!
     @IBOutlet weak var btnSubmit: ButtonTemplate!
     
+    let vm = UserAuthViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,13 +28,30 @@ class ForgotPasswordViewController: BaseViewController {
         fixKeyboardScroll()
     }
     
+    func apiForgotPassword(nik: String) {
+        showLoading()
+        vm.postForgotPassword(
+        body: ["nik":nik],
+        onSuccess: { response,message in
+            self.hideLoading()
+            self.showToast(message: message)
+            self.btnSubmit.setTitle("Kembali Login", for: .normal)
+            self.svCheckSms.isHidden = false
+            self.svTextfield.isHidden = true },
+        onError: { error in
+            self.hideLoading()
+            self.showToast(message: error) },
+        onFailed: { failed in
+            self.hideLoading()
+            self.showToast(message: failed) }
+        )
+    }
+    
     @IBAction func submitButtonAction(_ sender: Any) {
         if btnSubmit.title(for: .normal) == "Kembali Login"{
             goToLogin()
         } else {
-            btnSubmit.setTitle("Kembali Login", for: .normal)
-            svCheckSms.isHidden = false
-            svTextfield.isHidden = true
+            self.apiForgotPassword(nik: tfNik.text ?? "")
         }
     }
     

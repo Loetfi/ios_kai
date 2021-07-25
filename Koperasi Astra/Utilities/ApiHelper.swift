@@ -51,7 +51,7 @@ class ApiHelper: NSObject {
         }
     }
     
-    public func postRequest<T: Codable>(url: String, body: Parameters, onSuccess: @escaping (T) -> Void, onError: @escaping (String) -> Void, onFailed: @escaping (String) -> Void) {
+    public func postRequest<T: Codable>(url: String, body: Parameters, onSuccess: @escaping (T,String) -> Void, onError: @escaping (String) -> Void, onFailed: @escaping (String) -> Void) {
         let headers: HTTPHeaders = [
             "Content-Type": "application/application/json"
         ]
@@ -61,14 +61,14 @@ class ApiHelper: NSObject {
             case .failure(let error):
                 onFailed(error.localizedDescription)
             case .success(let value):
-                let json = JSON(value!)
+                let json = JSON(value ?? Data())
                 do {
                     let decoder = JSONDecoder()
                     let status = json["status"].intValue
                     let message = json["message"]
                     if status == 1 {
                         let result = try decoder.decode(T.self, from: value!)
-                        onSuccess(result)
+                        onSuccess(result,message.stringValue)
                     } else {
                         onFailed(message.stringValue)
                     }

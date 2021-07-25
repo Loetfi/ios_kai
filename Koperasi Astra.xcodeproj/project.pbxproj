@@ -12,6 +12,10 @@
 		EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */; };
 		EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA93268F392F0049A603 /* AppDelegate.swift */; };
 		EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA9C268F39310049A603 /* Assets.xcassets */; };
+		EE13863A26ADA9610014AB97 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE13863926ADA9610014AB97 /* BottomSheet.storyboard */; };
+		EE13863E26ADA9980014AB97 /* CollectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13863D26ADA9980014AB97 /* CollectionListViewController.swift */; };
+		EE13864426ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13864226ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift */; };
+		EE13864526ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE13864326ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib */; };
 		EE24FC4F26A33E0600A44307 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC4E26A33E0600A44307 /* Home.storyboard */; };
 		EE24FC5226A33E8300A44307 /* Service.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC5126A33E8300A44307 /* Service.storyboard */; };
 		EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC5426A33E9000A44307 /* Credit.storyboard */; };
@@ -54,6 +58,7 @@
 		EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F191269E8DA8002C6C8A /* Reachability.swift */; };
 		EE43F196269E908B002C6C8A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F195269E908B002C6C8A /* GradientView.swift */; };
 		EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */; };
+		EEB77D2726AD89B600FAC183 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB77D2626AD89B600FAC183 /* Register.swift */; };
 		EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CA2695BA4800FBCA76 /* Storyboards.swift */; };
 		EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */; };
 		EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */; };
@@ -78,6 +83,10 @@
 		EE0AEA93268F392F0049A603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0AEA9C268F39310049A603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0AEAA1268F39310049A603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE13863926ADA9610014AB97 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
+		EE13863D26ADA9980014AB97 /* CollectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListViewController.swift; sourceTree = "<group>"; };
+		EE13864226ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE13864326ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonWithImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE24FC4E26A33E0600A44307 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EE24FC5126A33E8300A44307 /* Service.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Service.storyboard; sourceTree = "<group>"; };
 		EE24FC5426A33E9000A44307 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
@@ -120,6 +129,7 @@
 		EE43F191269E8DA8002C6C8A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EE43F195269E908B002C6C8A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		EEB77D2626AD89B600FAC183 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		EECE83CA2695BA4800FBCA76 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +218,23 @@
 			path = "Koperasi Astra";
 			sourceTree = "<group>";
 		};
+		EE13863C26ADA9860014AB97 /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				EE13863D26ADA9980014AB97 /* CollectionListViewController.swift */,
+			);
+			path = "Bottom Sheet";
+			sourceTree = "<group>";
+		};
+		EE13864126ADAA870014AB97 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EE13864226ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift */,
+				EE13864326ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		EE24FC5A26A46A1900A44307 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +306,7 @@
 				EE24FC5126A33E8300A44307 /* Service.storyboard */,
 				EE24FC5426A33E9000A44307 /* Credit.storyboard */,
 				EE24FC5726A33E9E00A44307 /* User.storyboard */,
+				EE13863926ADA9610014AB97 /* BottomSheet.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -302,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				EE3863D626A861DE0093DC79 /* Authentication.swift */,
+				EEB77D2626AD89B600FAC183 /* Register.swift */,
 			);
 			path = "Model Data";
 			sourceTree = "<group>";
@@ -317,6 +346,8 @@
 		EECE83C72695BA1000FBCA76 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE13864126ADAA870014AB97 /* CollectionView */,
+				EE13863C26ADA9860014AB97 /* Bottom Sheet */,
 				EE004DF426A52F3C005A8223 /* TableView */,
 				EE24FC6B26A4776F00A44307 /* NavigationBar */,
 				EE43F1612695CA23002C6C8A /* ButtonTemplate.swift */,
@@ -440,6 +471,7 @@
 				EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */,
 				EE43F17A2695CAE8002C6C8A /* Poppins-Thin.otf in Resources */,
 				EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */,
+				EE13863A26ADA9610014AB97 /* BottomSheet.storyboard in Resources */,
 				EE43F1782695CAE8002C6C8A /* Poppins-Regular.otf in Resources */,
 				EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */,
 				EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */,
@@ -457,6 +489,7 @@
 				EE43F17F2695CAE8002C6C8A /* Poppins-ThinItalic.otf in Resources */,
 				EE43F1542695C542002C6C8A /* SplashScreen.storyboard in Resources */,
 				EE43F1892695CAE8002C6C8A /* Poppins-ExtraBold.otf in Resources */,
+				EE13864526ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib in Resources */,
 				EE24FC7326A4790F00A44307 /* Lato-Bold.ttf in Resources */,
 				EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */,
 				EE43F1882695CAE8002C6C8A /* Poppins-Light.otf in Resources */,
@@ -516,12 +549,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE13863E26ADA9980014AB97 /* CollectionListViewController.swift in Sources */,
 				EE43F196269E908B002C6C8A /* GradientView.swift in Sources */,
 				EE43F1582695C59C002C6C8A /* ApiHelper.swift in Sources */,
 				EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */,
 				EECE83E62695BD3300FBCA76 /* OnboardingViewController.swift in Sources */,
 				EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */,
 				EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */,
+				EEB77D2726AD89B600FAC183 /* Register.swift in Sources */,
 				EE43F1622695CA23002C6C8A /* CardView.swift in Sources */,
 				EE24FC6626A46A7F00A44307 /* ServiceViewController.swift in Sources */,
 				EE3863D726A861DE0093DC79 /* Authentication.swift in Sources */,
@@ -539,6 +574,7 @@
 				EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */,
 				EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */,
 				EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */,
+				EE13864426ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift in Sources */,
 				EE3863DA26A869F30093DC79 /* UITextField.swift in Sources */,
 				EECE83DC2695BAF900FBCA76 /* RegisterViewController.swift in Sources */,
 				EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */,

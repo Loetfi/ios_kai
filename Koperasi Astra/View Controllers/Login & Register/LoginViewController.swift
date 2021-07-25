@@ -30,11 +30,11 @@ class LoginViewController: BaseViewController {
     func postLoginUser() {
         showLoading()
         let body: [String: Any] = [
-            "username" : tfIDNumber.text,
-            "password" : tfPassword.text
+            "username" : tfIDNumber.text ?? "",
+            "password" : tfPassword.text ?? ""
         ]
         vm.postLogin(
-            body: body, onSuccess: { response in
+            body: body, onSuccess: { response,message in
                 self.hideLoading()
                 let defaults = UserDefaults.standard
                 defaults.set(response.token, forKey: "authToken")

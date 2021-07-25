@@ -30,5 +30,7 @@ target 'Koperasi Astra' do
   pod 'PopupDialog'
   
   pod 'Hero'
+  
+  pod 'FittedSheets'
 
 end
