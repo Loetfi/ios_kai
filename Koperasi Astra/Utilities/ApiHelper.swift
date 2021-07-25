@@ -66,7 +66,7 @@ class ApiHelper: NSObject {
                     let decoder = JSONDecoder()
                     let status = json["status"].intValue
                     let message = json["message"]
-                    if status == 0 {
+                    if status == 1 {
                         let result = try decoder.decode(T.self, from: value!)
                         onSuccess(result)
                     } else {

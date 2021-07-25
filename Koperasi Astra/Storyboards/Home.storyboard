@@ -18,49 +18,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcu-bQ-TvI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="713"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPC-tA-d5Q" customClass="CardView" customModule="Koperasi_Astra" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2S-wS-NrS">
-                                        <rect key="frame" x="0.0" y="0.0" width="85.5" height="61"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-ng-dCj">
-                                                <rect key="frame" x="20" y="20" width="45.5" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-5o-Alq" customClass="NavigationBar" customModule="Koperasi_Astra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Bnu-ng-dCj" secondAttribute="trailing" constant="20" id="Bzf-Yg-lgJ"/>
-                                            <constraint firstItem="Bnu-ng-dCj" firstAttribute="leading" secondItem="n2S-wS-NrS" secondAttribute="leading" constant="20" id="UnY-he-Fcq"/>
-                                            <constraint firstAttribute="bottom" secondItem="Bnu-ng-dCj" secondAttribute="bottom" constant="20" id="dV3-RE-diI"/>
-                                            <constraint firstItem="Bnu-ng-dCj" firstAttribute="top" secondItem="n2S-wS-NrS" secondAttribute="top" constant="20" id="uQF-0W-7WB"/>
+                                            <constraint firstAttribute="height" constant="56" id="90r-TD-7W5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="n2S-wS-NrS" secondAttribute="bottom" constant="20" id="4sD-K7-E75"/>
-                                    <constraint firstItem="n2S-wS-NrS" firstAttribute="top" secondItem="tcu-bQ-TvI" secondAttribute="top" id="PsC-V3-1tV"/>
-                                    <constraint firstAttribute="trailing" secondItem="n2S-wS-NrS" secondAttribute="trailing" id="t5A-vX-sOA"/>
-                                    <constraint firstItem="n2S-wS-NrS" firstAttribute="leading" secondItem="tcu-bQ-TvI" secondAttribute="leading" id="v3N-GW-Iil"/>
+                                    <constraint firstAttribute="bottom" secondItem="H8O-5o-Alq" secondAttribute="bottom" id="90f-Om-utN"/>
+                                    <constraint firstItem="H8O-5o-Alq" firstAttribute="top" secondItem="cPC-tA-d5Q" secondAttribute="top" id="bGg-XQ-aTh"/>
+                                    <constraint firstItem="H8O-5o-Alq" firstAttribute="leading" secondItem="cPC-tA-d5Q" secondAttribute="leading" id="kCf-ll-zxT"/>
+                                    <constraint firstAttribute="trailing" secondItem="H8O-5o-Alq" secondAttribute="trailing" id="qYt-pr-Hlh"/>
+                                    <constraint firstAttribute="height" constant="56" id="yxB-hI-IOW"/>
                                 </constraints>
-                            </scrollView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mTV-hO-gtM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tcu-bQ-TvI" firstAttribute="top" secondItem="cPC-tA-d5Q" secondAttribute="bottom" id="B33-kZ-zQK"/>
+                            <constraint firstItem="cPC-tA-d5Q" firstAttribute="leading" secondItem="gaM-SX-vmn" secondAttribute="leading" id="UNZ-Ru-boa"/>
                             <constraint firstItem="tcu-bQ-TvI" firstAttribute="width" secondItem="mTV-hO-gtM" secondAttribute="width" id="ZTV-8h-tRX"/>
+                            <constraint firstItem="mTV-hO-gtM" firstAttribute="trailing" secondItem="cPC-tA-d5Q" secondAttribute="trailing" id="aPy-Cr-q1u"/>
                             <constraint firstItem="mTV-hO-gtM" firstAttribute="trailing" secondItem="tcu-bQ-TvI" secondAttribute="trailing" id="jxb-vj-jJb"/>
                             <constraint firstItem="mTV-hO-gtM" firstAttribute="bottom" secondItem="tcu-bQ-TvI" secondAttribute="bottom" id="oqZ-IT-Gvg"/>
                             <constraint firstItem="tcu-bQ-TvI" firstAttribute="leading" secondItem="mTV-hO-gtM" secondAttribute="leading" id="rKV-xL-1Bw"/>
-                            <constraint firstItem="tcu-bQ-TvI" firstAttribute="top" secondItem="mTV-hO-gtM" secondAttribute="top" id="w9G-Fl-Nj3"/>
+                            <constraint firstItem="cPC-tA-d5Q" firstAttribute="top" secondItem="mTV-hO-gtM" secondAttribute="top" id="rqo-Gw-4su"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icHome" id="Hta-ah-sg2">
                         <color key="badgeColor" name="green03"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="navBar" destination="H8O-5o-Alq" id="UuX-Kd-LTi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJ2-1X-IOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

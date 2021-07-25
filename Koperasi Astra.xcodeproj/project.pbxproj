@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2BD206EE2DCE8F9991B22954 /* Pods_Koperasi_Astra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */; };
+		EE004DFD26A52F56005A8223 /* ButtonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004DFB26A52F56005A8223 /* ButtonListTableViewCell.swift */; };
+		EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */; };
 		EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA93268F392F0049A603 /* AppDelegate.swift */; };
 		EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA9C268F39310049A603 /* Assets.xcassets */; };
 		EE24FC4F26A33E0600A44307 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC4E26A33E0600A44307 /* Home.storyboard */; };
@@ -21,6 +23,8 @@
 		EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24FC6C26A477D200A44307 /* NavigationBar.swift */; };
 		EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC6F26A477F400A44307 /* NavigationBar.xib */; };
 		EE24FC7326A4790F00A44307 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE24FC7226A4790F00A44307 /* Lato-Bold.ttf */; };
+		EE3863D726A861DE0093DC79 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3863D626A861DE0093DC79 /* Authentication.swift */; };
+		EE3863DA26A869F30093DC79 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3863D926A869F30093DC79 /* UITextField.swift */; };
 		EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F14F2695C522002C6C8A /* LaunchScreenViewController.swift */; };
 		EE43F1542695C542002C6C8A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE43F1532695C542002C6C8A /* SplashScreen.storyboard */; };
 		EE43F1582695C59C002C6C8A /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F1572695C59C002C6C8A /* ApiHelper.swift */; };
@@ -68,6 +72,8 @@
 		735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Koperasi_Astra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA27E239561319B2F8F9EDD7 /* Pods-Koperasi Astra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koperasi Astra.debug.xcconfig"; path = "Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra.debug.xcconfig"; sourceTree = "<group>"; };
 		E2393E63911ECBFD90B8C1C8 /* Pods-Koperasi Astra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koperasi Astra.release.xcconfig"; path = "Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra.release.xcconfig"; sourceTree = "<group>"; };
+		EE004DFB26A52F56005A8223 /* ButtonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonListTableViewCell.swift; sourceTree = "<group>"; };
+		EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonListTableViewCell.xib; sourceTree = "<group>"; };
 		EE0AEA90268F392F0049A603 /* Koperasi Astra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koperasi Astra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0AEA93268F392F0049A603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0AEA9C268F39310049A603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 		EE24FC6C26A477D200A44307 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		EE24FC6F26A477F400A44307 /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		EE24FC7226A4790F00A44307 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		EE3863D626A861DE0093DC79 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		EE3863D926A869F30093DC79 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		EE43F14F2695C522002C6C8A /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		EE43F1532695C542002C6C8A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		EE43F1572695C59C002C6C8A /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
@@ -153,6 +161,15 @@
 				735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE004DF426A52F3C005A8223 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EE004DFB26A52F56005A8223 /* ButtonListTableViewCell.swift */,
+				EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		EE0AEA87268F392F0049A603 = {
@@ -284,6 +301,7 @@
 		EECE83C52695B9F100FBCA76 /* Model Data */ = {
 			isa = PBXGroup;
 			children = (
+				EE3863D626A861DE0093DC79 /* Authentication.swift */,
 			);
 			path = "Model Data";
 			sourceTree = "<group>";
@@ -299,6 +317,7 @@
 		EECE83C72695BA1000FBCA76 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE004DF426A52F3C005A8223 /* TableView */,
 				EE24FC6B26A4776F00A44307 /* NavigationBar */,
 				EE43F1612695CA23002C6C8A /* ButtonTemplate.swift */,
 				EE43F1602695CA23002C6C8A /* CardView.swift */,
@@ -313,6 +332,7 @@
 				EE43F1572695C59C002C6C8A /* ApiHelper.swift */,
 				EE43F15A2695C5F7002C6C8A /* Constants.swift */,
 				EE43F191269E8DA8002C6C8A /* Reachability.swift */,
+				EE3863D926A869F30093DC79 /* UITextField.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -419,6 +439,7 @@
 				EE43F1802695CAE8002C6C8A /* Poppins-Black.otf in Resources */,
 				EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */,
 				EE43F17A2695CAE8002C6C8A /* Poppins-Thin.otf in Resources */,
+				EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */,
 				EE43F1782695CAE8002C6C8A /* Poppins-Regular.otf in Resources */,
 				EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */,
 				EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */,
@@ -503,9 +524,11 @@
 				EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */,
 				EE43F1622695CA23002C6C8A /* CardView.swift in Sources */,
 				EE24FC6626A46A7F00A44307 /* ServiceViewController.swift in Sources */,
+				EE3863D726A861DE0093DC79 /* Authentication.swift in Sources */,
 				EECE83ED2695BD8B00FBCA76 /* OtpViewController.swift in Sources */,
 				EE24FC5C26A46A2900A44307 /* UserViewController.swift in Sources */,
 				EE24FC6926A46C1C00A44307 /* DashboardNavigationViewController.swift in Sources */,
+				EE004DFD26A52F56005A8223 /* ButtonListTableViewCell.swift in Sources */,
 				EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */,
 				EECE83F02695BDAD00FBCA76 /* ForgotPasswordViewController.swift in Sources */,
 				EE43F18F269E8D39002C6C8A /* BaseViewController.swift in Sources */,
@@ -516,6 +539,7 @@
 				EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */,
 				EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */,
 				EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */,
+				EE3863DA26A869F30093DC79 /* UITextField.swift in Sources */,
 				EECE83DC2695BAF900FBCA76 /* RegisterViewController.swift in Sources */,
 				EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */,
 				EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */,

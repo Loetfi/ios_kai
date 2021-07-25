@@ -17,6 +17,11 @@ class OtpViewController: BaseViewController {
     @IBOutlet weak var tfOTP3: UITextField!
     @IBOutlet weak var tfOTP4: UITextField!
     
+    @IBOutlet weak var btnResendOtp: UIButton!
+    
+    var timeCountdown = 5
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBarSetup(navBar: navigationBar, title: "OTP", hideBackButton: false)
@@ -25,12 +30,33 @@ class OtpViewController: BaseViewController {
         textFieldSetup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        btnResendOtp.isHidden = true
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCounter() {
+        self.otpTimer.text = self.timeFormatted(self.timeCountdown)
+        if timeCountdown != 0 {
+            timeCountdown -= 1
+        } else {
+            timer.invalidate()
+            btnResendOtp.isHidden = false
+        }
+    }
+    
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
     func textFieldSetup() {
         tfOTP1.delegate = self
         tfOTP2.delegate = self
         tfOTP3.delegate = self
         tfOTP4.delegate = self
-
+        
         tfOTP1.addTarget(self, action: #selector(self.textFieldDidChangeSelection(_:)), for: UIControl.Event.editingChanged)
         tfOTP2.addTarget(self, action: #selector(self.textFieldDidChangeSelection(_:)), for: UIControl.Event.editingChanged)
         tfOTP3.addTarget(self, action: #selector(self.textFieldDidChangeSelection(_:)), for: UIControl.Event.editingChanged)
@@ -74,8 +100,12 @@ class OtpViewController: BaseViewController {
         let vc = StoryboardScene.LoginRegister.registerSuccessViewController.instantiate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     @IBAction func requestOtpButtonAction(_ sender: Any) {
-        
+        timeCountdown = 300
+        btnResendOtp.isHidden = true
+        otpTimer.isHidden = false
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
 }
 

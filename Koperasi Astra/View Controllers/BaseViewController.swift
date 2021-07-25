@@ -7,12 +7,14 @@
 
 import UIKit
 import Hero
+import JGProgressHUD
 
 class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     var swipeBackEnabled: Bool = true
     var reachability: Reachability?
     var constraint:NSLayoutConstraint?
-    
+    let hud = JGProgressHUD()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
@@ -40,6 +42,16 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
             }
         } else {
             navigationController?.view.removeGestureRecognizer((navigationController?.interactivePopGestureRecognizer)!)
+        }
+    }
+    
+    func isAppAlreadyLaunchedOnce() -> Bool {
+        let defaults = UserDefaults.standard
+        if let _ = defaults.string(forKey: "userFirstInstall") {
+            return true
+        } else {
+            defaults.set(true, forKey: "userFirstInstall")
+            return false
         }
     }
     
@@ -97,6 +109,16 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
+    func showLoading() {
+        hud.textLabel.text = "Loading"
+        hud.style = .dark
+        hud.show(in: self.view)
+    }
+    
+    func hideLoading() {
+        hud.dismiss()
+    }
+    
     func openNoInternet() {
         showToast(message: "No Internet Connection")
     }
@@ -113,7 +135,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         toastLabel.layer.cornerRadius = 10
         toastLabel.clipsToBounds  =  true
         self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 2.0, delay: 0.3, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 3.5, delay: 0.3, options: .curveEaseIn, animations: {
             toastLabel.alpha = 0.0
         }, completion: { _ in
             toastLabel.removeFromSuperview()

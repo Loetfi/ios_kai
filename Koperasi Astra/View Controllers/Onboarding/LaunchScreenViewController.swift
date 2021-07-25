@@ -16,9 +16,20 @@ class LaunchScreenViewController: BaseViewController {
     
     func checkConnection() {
         if checkInternetConnection() == true {
-            goToOnboarding()
+            checkSessionToken()
+        }
+    }
+    
+    func checkSessionToken() {
+        let token = UserDefaults().string(forKey: "userToken") ?? ""
+        if !token.isEmpty {
+            goToHome()
         } else {
-            
+            if isAppAlreadyLaunchedOnce() == true {
+                goToLogin()
+            } else {
+                goToOnboarding()
+            }
         }
     }
     

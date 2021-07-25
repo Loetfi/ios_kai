@@ -35,6 +35,40 @@ class RegisterViewController: BaseViewController {
         fixKeyboardScroll()
     }
     
+    func postRegisterUser() {
+        showLoading()
+        let body: [String: Any] = [
+            "name" : tfName.text,
+            "email" : tfEmail.text,
+            "phone_number" : tfPhoneNumber.text,
+            "identity_id" : tfCardId.text,
+            "identity_photo" : .text,
+            "nik" : tfNikNumber.text,
+            "department" : tfDepartment.text,
+            "company" : tfCompanyName.text,
+            "division" : tfDivision.text,
+            "position" : tfPosition.text,
+            "company_identity_photo" : tfcom.text,
+            "personal_photo" : tfIDNumber.text
+        ]
+        vm.postLogin(
+            body: body, onSuccess: { response in
+                self.hideLoading()
+                let defaults = UserDefaults.standard
+                defaults.set(response.token, forKey: "authToken")
+                defaults.set(response.isNewUser, forKey: "isNewUser")
+                defaults.set(response.idRoleMaster, forKey: "idRoleMaster")
+                self.goToHome()
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            })
+        
+    }
+    
     @IBAction func registerButtonAction(_ sender: Any) {
         let tncVC = StoryboardScene.LoginRegister.termsConditionViewController.instantiate()
         self.navigationController?.pushViewController(tncVC, animated: true)

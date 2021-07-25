@@ -8,10 +8,8 @@
 import Foundation
 
 class Constants {
-    
     //BASE URL
     static let baseUrl = "https://commerce-kai-user.azurewebsites.net"
-    
     //AUTH
     //post
     static let auth = "/auth"
@@ -22,12 +20,10 @@ class Constants {
     static let authCheck = "/auth/check"
     static let authRefresh = "/auth/refresh"
     static let authCredentials = "/auth/credentials"
-
     //TOKEN
     static let getTokenIndividu = "/user-token/token-get-individu"
     static let getTokenList = "/user-token/token-get-list"
-
     //PROFILE
     static let getProfile = "/profile/get"
-
+    static let getCompany = "/company/get"
 }

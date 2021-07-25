@@ -7,9 +7,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
+    @IBOutlet weak var navBar: NavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.title = "Home"
+        navBar.isLeftButtonHidden = true
     }
 }
