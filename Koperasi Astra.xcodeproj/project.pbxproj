@@ -58,6 +58,10 @@
 		EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F191269E8DA8002C6C8A /* Reachability.swift */; };
 		EE43F196269E908B002C6C8A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F195269E908B002C6C8A /* GradientView.swift */; };
 		EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */; };
+		EE92928826FD07BA00C675DD /* ListBoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92928626FD07BA00C675DD /* ListBoxCollectionViewCell.swift */; };
+		EE92928926FD07BA00C675DD /* ListBoxCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE92928726FD07BA00C675DD /* ListBoxCollectionViewCell.xib */; };
+		EE92928E26FD0B8D00C675DD /* PopupSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */; };
+		EE92928F26FD0B8D00C675DD /* PopupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */; };
 		EEB77D2726AD89B600FAC183 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB77D2626AD89B600FAC183 /* Register.swift */; };
 		EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CA2695BA4800FBCA76 /* Storyboards.swift */; };
 		EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */; };
@@ -129,6 +133,10 @@
 		EE43F191269E8DA8002C6C8A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EE43F195269E908B002C6C8A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		EE92928626FD07BA00C675DD /* ListBoxCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBoxCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE92928726FD07BA00C675DD /* ListBoxCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListBoxCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectionViewController.xib; sourceTree = "<group>"; };
+		EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectionViewController.swift; sourceTree = "<group>"; };
 		EEB77D2626AD89B600FAC183 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		EECE83CA2695BA4800FBCA76 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +237,8 @@
 		EE13864126ADAA870014AB97 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				EE92928626FD07BA00C675DD /* ListBoxCollectionViewCell.swift */,
+				EE92928726FD07BA00C675DD /* ListBoxCollectionViewCell.xib */,
 				EE13864226ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift */,
 				EE13864326ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib */,
 			);
@@ -294,6 +304,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		EE92928B26FD0B8D00C675DD /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */,
+				EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
 		EECE83C32695B5C900FBCA76 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +365,7 @@
 		EECE83C72695BA1000FBCA76 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE92928B26FD0B8D00C675DD /* PopupView */,
 				EE13864126ADAA870014AB97 /* CollectionView */,
 				EE13863C26ADA9860014AB97 /* Bottom Sheet */,
 				EE004DF426A52F3C005A8223 /* TableView */,
@@ -476,6 +496,7 @@
 				EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */,
 				EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */,
 				EECE83E12695BD0900FBCA76 /* Onboarding.storyboard in Resources */,
+				EE92928926FD07BA00C675DD /* ListBoxCollectionViewCell.xib in Resources */,
 				EE43F17C2695CAE8002C6C8A /* Poppins-BoldItalic.otf in Resources */,
 				EE43F1852695CAE8002C6C8A /* Poppins-BlackItalic.otf in Resources */,
 				EE43F1842695CAE8002C6C8A /* Poppins-Medium.otf in Resources */,
@@ -492,6 +513,7 @@
 				EE13864526ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.xib in Resources */,
 				EE24FC7326A4790F00A44307 /* Lato-Bold.ttf in Resources */,
 				EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */,
+				EE92928E26FD0B8D00C675DD /* PopupSelectionViewController.xib in Resources */,
 				EE43F1882695CAE8002C6C8A /* Poppins-Light.otf in Resources */,
 				EE43F17D2695CAE8002C6C8A /* Poppins-Bold.otf in Resources */,
 				EE43F1862695CAE8002C6C8A /* Poppins-ExtraBoldItalic.otf in Resources */,
@@ -555,6 +577,7 @@
 				EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */,
 				EECE83E62695BD3300FBCA76 /* OnboardingViewController.swift in Sources */,
 				EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */,
+				EE92928826FD07BA00C675DD /* ListBoxCollectionViewCell.swift in Sources */,
 				EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */,
 				EEB77D2726AD89B600FAC183 /* Register.swift in Sources */,
 				EE43F1622695CA23002C6C8A /* CardView.swift in Sources */,
@@ -573,6 +596,7 @@
 				EE43F15B2695C5F7002C6C8A /* Constants.swift in Sources */,
 				EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */,
 				EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */,
+				EE92928F26FD0B8D00C675DD /* PopupSelectionViewController.swift in Sources */,
 				EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */,
 				EE13864426ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift in Sources */,
 				EE3863DA26A869F30093DC79 /* UITextField.swift in Sources */,

@@ -38,7 +38,7 @@ class ServiceViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navBar.title = "Services"
+        navBar.title = "Service"
         navBar.isLeftButtonHidden = true
         setupTableView()
     }

@@ -6,14 +6,179 @@
 //
 
 import UIKit
+import FSPagerView
 
 class HomeViewController: BaseViewController {
 
-    @IBOutlet weak var navBar: NavigationBar!
+    @IBOutlet weak var btnSearch: UIButton!
+    @IBOutlet weak var vPager: FSPagerView!
+    @IBOutlet weak var vPageControl: FSPageControl!
+    @IBOutlet weak var cvList: UICollectionView!
+    
+    let inset: CGFloat = 10
+    let minimumLineSpacing: CGFloat = 10
+    let minimumInteritemSpacing: CGFloat = 10
+    let cellsPerRow = 4
+    
+    var buttonList = ["Pulsa",
+                      "Paket Internet",
+                      "Listrik",
+                      "Tiket Pesawat",
+                      "BPJS",
+                      "Tagihan Air",
+                      "Simpan Pinjam",
+                      "Tiket Hotel"]
+    var imgList = ["icPulsa",
+                   "icPaketInternet",
+                   "icListrik",
+                   "icTiket",
+                   "icBpjs",
+                   "icTagihanAir",
+                   "icSimpanPinjam",
+                   "icTiket"]
+    
+    var imgOnboarding = ["imgBanner","imgBanner","imgBanner"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navBar.title = "Home"
-        navBar.isLeftButtonHidden = true
+        btnSearch.layer.cornerRadius = 5
+        setupPagerView()
+        self.setupCell()
+    }
+    
+    func setupCell(){
+        cvList.delegate = self
+        cvList.dataSource = self
+        let nibCollection = UINib(nibName: "ListBoxCollectionViewCell", bundle: nil)
+        cvList.register(nibCollection, forCellWithReuseIdentifier: "ButtonImageCell")
+        cvList.allowsSelection = true
+        cvList.contentInsetAdjustmentBehavior = .always
+    }
+    
+    func setupPagerView() {
+        self.vPager.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        vPageControl.numberOfPages = imgOnboarding.count
+        vPageControl.currentPage = 0
+        
+        if #available(iOS 13.0, *) {
+            vPager.largeContentImageInsets = UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50)
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        self.vPageControl.contentHorizontalAlignment = .leading
+        self.vPageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        self.vPageControl.itemSpacing = 10
+        self.vPager.transformer = FSPagerViewTransformer(type: .overlap)
+        self.vPager.isInfinite = true
+        self.vPageControl.setFillColor(UIColor(named: "green03"), for: .selected)
+        self.vPageControl.setFillColor(UIColor(named: "black04"), for: .normal)
+    }
+    
+    @IBAction func searchButton(_ sender: Any) {
+        
+    }
+    
+}
+
+extension HomeViewController: FSPagerViewDataSource, FSPagerViewDelegate {
+    func numberOfItems(in pagerView: FSPagerView) -> Int {
+        return imgOnboarding.count
+    }
+    
+    func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
+        let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
+        cell.imageView?.image = UIImage(named:imgOnboarding[index])
+        cell.imageView?.backgroundColor = UIColor.white
+        cell.imageView?.contentMode = .scaleAspectFit
+        return cell
+    }
+    
+    func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
+        self.vPageControl.currentPage = targetIndex
+    }
+    
+    func pagerViewDidEndScrollAnimation(_ pagerView: FSPagerView) {
+        self.vPageControl.currentPage = pagerView.currentIndex
+    }
+    
+    func pagerView(_ pagerView: FSPagerView, shouldHighlightItemAt index: Int) -> Bool {
+        return false
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return buttonList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonImageCell", for: indexPath) as! ListBoxCollectionViewCell
+        cell.lblTitle.text = buttonList[indexPath.row]
+        cell.ivTitle.image = UIImage(named: imgList[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumLineSpacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return minimumInteritemSpacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let marginsAndInsets = inset * 2 + collectionView.safeAreaInsets.left + collectionView.safeAreaInsets.right + minimumInteritemSpacing * CGFloat(cellsPerRow - 1)
+        let itemWidth = ((collectionView.bounds.size.width - marginsAndInsets) / CGFloat(cellsPerRow)).rounded(.down)
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        cvList?.collectionViewLayout.invalidateLayout()
+        super.viewWillTransition(to: size, with: coordinator)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if buttonList[indexPath.row] == "Pulsa" {
+//            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+//            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if buttonList[indexPath.row] == "Paket Data" {
+//            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+//            vc.isPaketData = true
+//            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if buttonList[indexPath.row] == "BPJS" {
+//            let vc = StoryboardScene.BPJS.BpjsViewController.instantiate()
+//            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if buttonList[indexPath.row] == "Listrik PLN" {
+//            let vc = StoryboardScene.Listrik.ListrikViewController.instantiate()
+//            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if buttonList[indexPath.row] == "Tagihan Air" {
+//            let vc = StoryboardScene.Air.AirViewController.instantiate()
+//            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
+        if buttonList[indexPath.row] == "Hotel" {
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
+        if buttonList[indexPath.row] == "Flight" {
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
     }
 }

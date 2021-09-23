@@ -106,6 +106,6 @@ extension OnboardingViewController: FSPagerViewDataSource, FSPagerViewDelegate {
     }
     
     func pagerView(_ pagerView: FSPagerView, shouldHighlightItemAt index: Int) -> Bool {
-        return false
+        return false 
     }
 }

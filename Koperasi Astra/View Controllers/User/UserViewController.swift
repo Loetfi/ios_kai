@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import PopupDialog
 
-class UserViewController: UIViewController {
+class UserViewController: BaseViewController {
 
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var userMenuTableView: UITableView!
@@ -47,6 +48,49 @@ class UserViewController: UIViewController {
         
         let nib = UINib.init(nibName: "ButtonListTableViewCell", bundle: nil)
         userMenuTableView.register(nib, forCellReuseIdentifier: "ButtonList")
+    }
+    
+    func showCustomDialog(animated: Bool = true, viewController: UIViewController) {
+        let popup = PopupDialog(viewController: viewController,
+                                buttonAlignment: .horizontal,
+                                transitionStyle: .zoomIn,
+                                tapGestureDismissal: true,
+                                panGestureDismissal: false)
+        present(popup, animated: animated, completion: nil)
+    }
+    
+//    @IBAction func dataPersonalButtonTap(_ sender: Any) {
+//        let vc = StoryboardScene.User.PersonalDataViewController.instantiate()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//    @IBAction func pengaturanAlamatButtonTap(_ sender: Any) {
+//        let vc = StoryboardScene.User.AddressSetupViewController.instantiate()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//    @IBAction func ubahPasswordButtonTap(_ sender: Any) {
+//        let vc = StoryboardScene.User.ChangePasswordViewController.instantiate()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//    @IBAction func aboutUsButtonTap(_ sender: Any) {
+//        let vc = StoryboardScene.User.AboutUsViewController.instantiate()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//    @IBAction func contactUsButtonTap(_ sender: Any) {
+//        let vc = StoryboardScene.User.ContactUsViewController.instantiate()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+    
+    @IBAction func logoutButtonTap(_ sender: Any) {
+        let logoutVC = PopupSelectionViewController(nibName: "PopupSelectionViewController", bundle: nil)
+        let completionHandler:(PopupSelectionViewController) -> Void = { vc in
+            let defaults = UserDefaults.standard
+            defaults.set("", forKey: "authToken")
+            defaults.set("", forKey: "isNewUser")
+            defaults.set("", forKey: "idRoleMaster")
+            self.goToLogin()
+        }
+        logoutVC.completionHandler = completionHandler
+        showCustomDialog(viewController: logoutVC)
     }
 }
 

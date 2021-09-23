@@ -57,6 +57,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginButtonAction(_ sender: Any) {
         postLoginUser()
+//        goToHome()
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {

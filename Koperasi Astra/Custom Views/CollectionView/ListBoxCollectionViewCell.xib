@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListBoxCollectionViewCell" customModule="Kogoro_Apps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUj-Fv-aVx">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="114"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TFJ-rh-jMO">
+                                <rect key="frame" x="5" y="5" width="180" height="104"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-Aa-vhL" customClass="CardView" customModule="Kogoro_Apps" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="imgLogoTitle" translatesAutoresizingMaskIntoConstraints="NO" id="NbG-kY-JOd">
+                                                <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NbG-kY-JOd" secondAttribute="bottom" constant="8" id="A3p-wb-TDN"/>
+                                            <constraint firstItem="NbG-kY-JOd" firstAttribute="leading" secondItem="Iqb-Aa-vhL" secondAttribute="leading" constant="8" id="BV7-a0-1B3"/>
+                                            <constraint firstAttribute="height" constant="60" id="OHl-6d-ofj"/>
+                                            <constraint firstAttribute="width" constant="60" id="Y8y-jd-iqI"/>
+                                            <constraint firstItem="NbG-kY-JOd" firstAttribute="top" secondItem="Iqb-Aa-vhL" secondAttribute="top" constant="8" id="jhI-kB-ko6"/>
+                                            <constraint firstAttribute="trailing" secondItem="NbG-kY-JOd" secondAttribute="trailing" constant="8" id="nqN-5Y-N3l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="fAF-kD-0St">
+                                        <rect key="frame" x="79" y="65" width="22.5" height="39"/>
+                                        <string key="text">Title
+Title</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TFJ-rh-jMO" secondAttribute="trailing" constant="5" id="3pT-t0-v4y"/>
+                            <constraint firstAttribute="bottom" secondItem="TFJ-rh-jMO" secondAttribute="bottom" constant="5" id="IuY-GW-hdu"/>
+                            <constraint firstItem="TFJ-rh-jMO" firstAttribute="leading" secondItem="yUj-Fv-aVx" secondAttribute="leading" constant="5" id="Q2T-Sz-Sc5"/>
+                            <constraint firstItem="TFJ-rh-jMO" firstAttribute="top" secondItem="yUj-Fv-aVx" secondAttribute="top" constant="5" id="SKw-4q-D5U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yUj-Fv-aVx" secondAttribute="trailing" id="LlN-WY-8Eb"/>
+                <constraint firstItem="yUj-Fv-aVx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qsb-kF-T4C"/>
+                <constraint firstItem="yUj-Fv-aVx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uEs-8j-bKu"/>
+                <constraint firstAttribute="bottom" secondItem="yUj-Fv-aVx" secondAttribute="bottom" id="uHf-CW-06Y"/>
+            </constraints>
+            <size key="customSize" width="190" height="114"/>
+            <connections>
+                <outlet property="ivTitle" destination="NbG-kY-JOd" id="9PT-OY-teO"/>
+                <outlet property="lblTitle" destination="fAF-kD-0St" id="x8R-uo-M6Z"/>
+                <outlet property="vContent" destination="yUj-Fv-aVx" id="bYE-Je-GJb"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="81.026785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="imgLogoTitle" width="212" height="49.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
