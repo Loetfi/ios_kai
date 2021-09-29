@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Italic.otf">
+            <string>Poppins-Italic</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListTransaksiCollectionViewCell" customModule="Koperasi_Astra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZe-nI-acw" customClass="CardView" customModule="Kogoro_Apps" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKk-Zs-LCa">
+                                <rect key="frame" x="0.0" y="40" width="330" height="1"/>
+                                <color key="backgroundColor" name="black04"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="thg-EA-wnk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-7J-Lhe" customClass="CardView" customModule="Kogoro_Apps" customModuleProvider="target">
+                                <rect key="frame" x="178" y="10" width="132" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPH-vr-i2G">
+                                        <rect key="frame" x="25.5" y="3" width="81" height="10.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="9"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="green03"/>
+                                <constraints>
+                                    <constraint firstItem="nPH-vr-i2G" firstAttribute="centerY" secondItem="h8V-7J-Lhe" secondAttribute="centerY" id="BSy-ZL-ONd"/>
+                                    <constraint firstAttribute="height" constant="16" id="KLp-rl-azf"/>
+                                    <constraint firstItem="nPH-vr-i2G" firstAttribute="centerX" secondItem="h8V-7J-Lhe" secondAttribute="centerX" id="RTj-n3-Yen"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PBg-ne-TSN">
+                                <rect key="frame" x="20" y="51" width="300" height="40.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98e-Ik-1O0">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="23.5"/>
+                                        <string key="text">Simpati - Paket Bicara 550 menit &amp; 50 menit
+All Operator</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="085883515748" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2u-Ij-96D">
+                                        <rect key="frame" x="0.0" y="28.5" width="300" height="12"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <color key="textColor" name="black02"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 50.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-8d-yZL">
+                                <rect key="frame" x="245" y="93.5" width="65" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="black01"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QEO-WR-DFe">
+                                <rect key="frame" x="20" y="10" width="55.5" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulsa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ut-dH-VXs">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 Mei 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdR-Tp-6Jh">
+                                        <rect key="frame" x="0.0" y="11" width="55.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <color key="textColor" name="black02"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QEO-WR-DFe" firstAttribute="top" secondItem="gZe-nI-acw" secondAttribute="top" constant="10" id="2bm-Zb-LLY"/>
+                            <constraint firstAttribute="trailing" secondItem="PBg-ne-TSN" secondAttribute="trailing" constant="10" id="I18-Gx-0Si"/>
+                            <constraint firstAttribute="bottom" secondItem="bUc-8d-yZL" secondAttribute="bottom" constant="10" id="InF-6n-gLX"/>
+                            <constraint firstItem="h8V-7J-Lhe" firstAttribute="width" secondItem="gZe-nI-acw" secondAttribute="width" multiplier="0.4" id="MJh-jj-w4s"/>
+                            <constraint firstItem="PBg-ne-TSN" firstAttribute="leading" secondItem="gZe-nI-acw" secondAttribute="leading" constant="20" id="NkN-aZ-j56"/>
+                            <constraint firstItem="QEO-WR-DFe" firstAttribute="leading" secondItem="gZe-nI-acw" secondAttribute="leading" constant="20" id="S9k-D8-8eF"/>
+                            <constraint firstAttribute="trailing" secondItem="mKk-Zs-LCa" secondAttribute="trailing" id="Xjj-3Z-wtg"/>
+                            <constraint firstAttribute="trailing" secondItem="h8V-7J-Lhe" secondAttribute="trailing" constant="20" id="bmy-BG-MSy"/>
+                            <constraint firstItem="mKk-Zs-LCa" firstAttribute="top" secondItem="gZe-nI-acw" secondAttribute="top" constant="40" id="exU-bD-OCm"/>
+                            <constraint firstItem="PBg-ne-TSN" firstAttribute="top" secondItem="mKk-Zs-LCa" secondAttribute="bottom" constant="10" id="gXm-QB-RFP"/>
+                            <constraint firstItem="h8V-7J-Lhe" firstAttribute="top" secondItem="gZe-nI-acw" secondAttribute="top" constant="10" id="kTd-tW-OMk"/>
+                            <constraint firstAttribute="trailing" secondItem="bUc-8d-yZL" secondAttribute="trailing" constant="20" id="oON-d0-ZUj"/>
+                            <constraint firstItem="mKk-Zs-LCa" firstAttribute="leading" secondItem="gZe-nI-acw" secondAttribute="leading" id="uvd-WB-8ee"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="black05"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD4-tf-rQH" customClass="CardView" customModule="Kogoro_Apps" customModuleProvider="target">
+                        <rect key="frame" x="-20" y="24" width="30" height="72"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="keB-Rc-wGo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="PD4-tf-rQH" firstAttribute="height" secondItem="gZe-nI-acw" secondAttribute="height" multiplier="0.6" id="ChV-CK-8ok"/>
+                <constraint firstAttribute="bottom" secondItem="gZe-nI-acw" secondAttribute="bottom" id="KGU-dG-huM"/>
+                <constraint firstItem="gZe-nI-acw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PMo-wA-Ovv"/>
+                <constraint firstItem="gZe-nI-acw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g6D-3A-k2l"/>
+                <constraint firstAttribute="trailing" secondItem="gZe-nI-acw" secondAttribute="trailing" id="jwr-yy-Idg"/>
+                <constraint firstItem="PD4-tf-rQH" firstAttribute="centerY" secondItem="gZe-nI-acw" secondAttribute="centerY" id="tjH-Jk-Sbz"/>
+                <constraint firstItem="PD4-tf-rQH" firstAttribute="leading" secondItem="gZe-nI-acw" secondAttribute="leading" constant="-20" id="zYQ-M4-i3w"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="89.732142857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black01">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black02">
+            <color red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black04">
+            <color red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black05">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green03">
+            <color red="0.2627450980392157" green="0.6588235294117647" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

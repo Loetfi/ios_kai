@@ -59,26 +59,31 @@ class UserViewController: BaseViewController {
         present(popup, animated: animated, completion: nil)
     }
     
-//    @IBAction func dataPersonalButtonTap(_ sender: Any) {
-//        let vc = StoryboardScene.User.PersonalDataViewController.instantiate()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
-//    @IBAction func pengaturanAlamatButtonTap(_ sender: Any) {
-//        let vc = StoryboardScene.User.AddressSetupViewController.instantiate()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
-//    @IBAction func ubahPasswordButtonTap(_ sender: Any) {
-//        let vc = StoryboardScene.User.ChangePasswordViewController.instantiate()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
-//    @IBAction func aboutUsButtonTap(_ sender: Any) {
-//        let vc = StoryboardScene.User.AboutUsViewController.instantiate()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
-//    @IBAction func contactUsButtonTap(_ sender: Any) {
-//        let vc = StoryboardScene.User.ContactUsViewController.instantiate()
-//        self.navigationController?.pushViewController(vc, animated: true)
-//    }
+    @IBAction func dataPersonalButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.PersonalDataViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func pengaturanAlamatButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.AddressSetupViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func ubahPasswordButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.ChangePasswordViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func aboutUsButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.AboutUsViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func aboutAppsButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.AboutUsViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func contactUsButtonTap(_ sender: Any) {
+        let vc = StoryboardScene.User.ContactUsViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     @IBAction func logoutButtonTap(_ sender: Any) {
         let logoutVC = PopupSelectionViewController(nibName: "PopupSelectionViewController", bundle: nil)

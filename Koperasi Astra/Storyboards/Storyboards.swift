@@ -42,6 +42,18 @@ internal enum StoryboardScene {
         
         internal static let CollectionListViewController = SceneType<CollectionListViewController>(storyboard: BottomSheet.self, identifier: "CollectionListViewController")
     }
+    
+    internal enum User: StoryboardType {
+        internal static let storyboardName = "User"
+        
+        internal static let PersonalDataViewController = SceneType<PersonalDataViewController>(storyboard: User.self, identifier: "PersonalDataViewController")
+        internal static let ListTransaksiViewController = SceneType<ListTransaksiViewController>(storyboard: User.self, identifier: "ListTransaksiViewController")
+        internal static let ListPinjamanViewController = SceneType<ListPinjamanViewController>(storyboard: User.self, identifier: "ListPinjamanViewController")
+        internal static let AboutUsViewController = SceneType<AboutUsViewController>(storyboard: User.self, identifier: "AboutUsViewController")
+        internal static let ContactUsViewController = SceneType<ContactUsViewController>(storyboard: User.self, identifier: "ContactUsViewController")
+        internal static let AddressSetupViewController = SceneType<AddressSetupViewController>(storyboard: User.self, identifier: "AddressSetupViewController")
+        internal static let ChangePasswordViewController = SceneType<ChangePasswordViewController>(storyboard: User.self, identifier: "ChangePasswordViewController")
+    }
 }
 
 internal protocol StoryboardType {
