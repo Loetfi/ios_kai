@@ -8,8 +8,10 @@
 import UIKit
 import Hero
 import JGProgressHUD
+import PopupDialog
 
 class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
+    let userId: String =  UserDefaults.standard.string(forKey: "userID") ?? ""
     var swipeBackEnabled: Bool = true
     var reachability: Reachability?
     var constraint:NSLayoutConstraint?
@@ -194,5 +196,14 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     func goToLogin() {
         let vc = StoryboardScene.LoginRegister.loginViewController.instantiate()
         self.navigationController?.setViewControllers([vc], animated: false)
+    }
+    
+    func showPopupDialog(animated: Bool = true, viewController: UIViewController) {
+        let popup = PopupDialog(viewController: viewController,
+                                buttonAlignment: .horizontal,
+                                transitionStyle: .zoomIn,
+                                tapGestureDismissal: true,
+                                panGestureDismissal: false)
+        present(popup, animated: animated, completion: nil)
     }
 }

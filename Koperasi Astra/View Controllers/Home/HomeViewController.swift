@@ -19,6 +19,7 @@ class HomeViewController: BaseViewController {
     let minimumLineSpacing: CGFloat = 10
     let minimumInteritemSpacing: CGFloat = 10
     let cellsPerRow = 4
+    let vmAuth = UserAuthViewModel()
     
     var buttonList = ["Pulsa",
                       "Paket Internet",
@@ -46,6 +47,10 @@ class HomeViewController: BaseViewController {
         self.setupCell()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.postCheckAuth()
+    }
+    
     func setupCell(){
         cvList.delegate = self
         cvList.dataSource = self
@@ -53,6 +58,27 @@ class HomeViewController: BaseViewController {
         cvList.register(nibCollection, forCellWithReuseIdentifier: "ButtonImageCell")
         cvList.allowsSelection = true
         cvList.contentInsetAdjustmentBehavior = .always
+    }
+    
+    func postCheckAuth() {
+        showLoading()
+        vmAuth.getAuthCheck(
+            body: ["":""],
+            onSuccess: { response, message  in
+                self.hideLoading()
+                let defaults = UserDefaults.standard
+                defaults.set(response.idUser, forKey: "userID")
+                defaults.set(response.username, forKey: "username")
+                defaults.set(response.isNewUser, forKey: "isNewUser")
+                defaults.set(response.idRoleMaster, forKey: "idRoleMaster")
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            }
+        )
     }
     
     func setupPagerView() {
@@ -145,34 +171,38 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if buttonList[indexPath.row] == "Pulsa" {
-//            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
-//            self.navigationController?.pushViewController(vc, animated: true)
+            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
             showToast(message: "FITUR INI BELUM TERSEDIA")
 
         }
-        if buttonList[indexPath.row] == "Paket Data" {
-//            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
-//            vc.isPaketData = true
-//            self.navigationController?.pushViewController(vc, animated: true)
+        if buttonList[indexPath.row] == "Paket Internet" {
+            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+            vc.isPaketData = true
+            self.navigationController?.pushViewController(vc, animated: true)
             showToast(message: "FITUR INI BELUM TERSEDIA")
 
         }
         if buttonList[indexPath.row] == "BPJS" {
-//            let vc = StoryboardScene.BPJS.BpjsViewController.instantiate()
-//            self.navigationController?.pushViewController(vc, animated: true)
+            let vc = StoryboardScene.Bpjs.BpjsViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
             showToast(message: "FITUR INI BELUM TERSEDIA")
 
         }
-        if buttonList[indexPath.row] == "Listrik PLN" {
-//            let vc = StoryboardScene.Listrik.ListrikViewController.instantiate()
-//            self.navigationController?.pushViewController(vc, animated: true)
+        if buttonList[indexPath.row] == "Listrik" {
+            let vc = StoryboardScene.Listrik.ListrikViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
             showToast(message: "FITUR INI BELUM TERSEDIA")
 
         }
         if buttonList[indexPath.row] == "Tagihan Air" {
-//            let vc = StoryboardScene.Air.AirViewController.instantiate()
-//            self.navigationController?.pushViewController(vc, animated: true)
-            showToast(message: "FITUR INI BELUM TERSEDIA")
+            let vc = StoryboardScene.Air.AirViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+//            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
+        if buttonList[indexPath.row] == "Simpan Pinjam" {
+            let vc = StoryboardScene.Loan.ApplyLoanViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         if buttonList[indexPath.row] == "Hotel" {
             showToast(message: "FITUR INI BELUM TERSEDIA")

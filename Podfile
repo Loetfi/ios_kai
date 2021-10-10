@@ -33,4 +33,6 @@ target 'Koperasi Astra' do
   
   pod 'FittedSheets'
 
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+
 end

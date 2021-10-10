@@ -21,7 +21,7 @@ class LaunchScreenViewController: BaseViewController {
     }
     
     func checkSessionToken() {
-        let token = UserDefaults().string(forKey: "userToken") ?? ""
+        let token = UserDefaults().string(forKey: "authToken") ?? ""
         if !token.isEmpty {
             goToHome()
         } else {

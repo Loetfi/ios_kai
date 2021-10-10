@@ -41,6 +41,8 @@ internal enum StoryboardScene {
         internal static let storyboardName = "BottomSheet"
         
         internal static let CollectionListViewController = SceneType<CollectionListViewController>(storyboard: BottomSheet.self, identifier: "CollectionListViewController")
+        internal static let DetailItemViewController = SceneType<DetailItemViewController>(storyboard: BottomSheet.self, identifier: "DetailItemViewController")
+        internal static let DetailLoanViewController = SceneType<DetailLoanViewController>(storyboard: BottomSheet.self, identifier: "DetailLoanViewController")
     }
     
     internal enum User: StoryboardType {
@@ -53,6 +55,51 @@ internal enum StoryboardScene {
         internal static let ContactUsViewController = SceneType<ContactUsViewController>(storyboard: User.self, identifier: "ContactUsViewController")
         internal static let AddressSetupViewController = SceneType<AddressSetupViewController>(storyboard: User.self, identifier: "AddressSetupViewController")
         internal static let ChangePasswordViewController = SceneType<ChangePasswordViewController>(storyboard: User.self, identifier: "ChangePasswordViewController")
+        internal static let AboutAppsViewController = SceneType<AboutAppsViewController>(storyboard: User.self, identifier: "AboutAppsViewController")
+    }
+    
+    internal enum Pulsa: StoryboardType {
+        internal static let storyboardName = "Pulsa"
+        
+        internal static let InputPhoneNumberViewController = SceneType<InputPhoneNumberViewController>(storyboard: Pulsa.self, identifier: "InputPhoneNumberViewController")
+        
+        internal static let InfoPulsaViewController = SceneType<InfoPulsaViewController>(storyboard: Pulsa.self, identifier: "InfoPulsaViewController")
+
+        internal static let PaymentOptionPulsaViewController = SceneType<PaymentOptionPulsaViewController>(storyboard: Pulsa.self, identifier: "PaymentOptionPulsaViewController")
+
+        internal static let PaymentVaViewController = SceneType<PaymentVaViewController>(storyboard: Pulsa.self, identifier: "PaymentVaViewController")
+
+        internal static let PaymentSaldoViewController = SceneType<PaymentSaldoViewController>(storyboard: Pulsa.self, identifier: "PaymentSaldoViewController")
+    }
+    
+    internal enum Bpjs: StoryboardType {
+        internal static let storyboardName = "Bpjs"
+        
+        internal static let BpjsViewController = SceneType<BpjsViewController>(storyboard: Bpjs.self, identifier: "BpjsViewController")
+        internal static let BpjsDetailInfoViewController = SceneType<BpjsDetailInfoViewController>(storyboard: Bpjs.self, identifier: "BpjsDetailInfoViewController")
+
+    }
+    
+    internal enum Air: StoryboardType {
+        internal static let storyboardName = "Air"
+        
+        internal static let AirViewController = SceneType<AirViewController>(storyboard: Air.self, identifier: "AirViewController")
+    }
+    
+    internal enum Listrik: StoryboardType {
+        internal static let storyboardName = "Listrik"
+        
+        internal static let ListrikViewController = SceneType<ListrikViewController>(storyboard: Listrik.self, identifier: "ListrikViewController")
+    }
+    
+    internal enum Loan: StoryboardType {
+        internal static let storyboardName = "Loan"
+        
+        internal static let ApplyLoanViewController = SceneType<ApplyLoanViewController>(storyboard: Loan.self, identifier: "ApplyLoanViewController")
+        internal static let LoanDataViewController = SceneType<LoanDataViewController>(storyboard: Loan.self, identifier: "LoanDataViewController")
+
+        internal static let LoanFinishViewController = SceneType<LoanFinishViewController>(storyboard: Loan.self, identifier: "LoanFinishViewController")
+
     }
 }
 

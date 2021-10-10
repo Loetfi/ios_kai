@@ -10,6 +10,9 @@
 		2BD206EE2DCE8F9991B22954 /* Pods_Koperasi_Astra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735FF09B353EA0A8ACE868D8 /* Pods_Koperasi_Astra.framework */; };
 		EE004DFD26A52F56005A8223 /* ButtonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004DFB26A52F56005A8223 /* ButtonListTableViewCell.swift */; };
 		EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */; };
+		EE02CF112709C71E0096B25B /* Pulsa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE02CF102709C71E0096B25B /* Pulsa.storyboard */; };
+		EE02CF2D2709C73E0096B25B /* Listrik.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE02CF2C2709C73E0096B25B /* Listrik.storyboard */; };
+		EE02CF302709C75A0096B25B /* Bpjs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE02CF2F2709C75A0096B25B /* Bpjs.storyboard */; };
 		EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0AEA93268F392F0049A603 /* AppDelegate.swift */; };
 		EE0AEA9D268F39310049A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0AEA9C268F39310049A603 /* Assets.xcassets */; };
 		EE13863A26ADA9610014AB97 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE13863926ADA9610014AB97 /* BottomSheet.storyboard */; };
@@ -71,11 +74,37 @@
 		EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F191269E8DA8002C6C8A /* Reachability.swift */; };
 		EE43F196269E908B002C6C8A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F195269E908B002C6C8A /* GradientView.swift */; };
 		EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */; };
+		EE608BE0271089C8002BC9DB /* AuthCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BDF271089C8002BC9DB /* AuthCheck.swift */; };
+		EE608BE227108EF3002BC9DB /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BE127108EF3002BC9DB /* BaseResponse.swift */; };
+		EE608BE42710928B002BC9DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BE32710928B002BC9DB /* User.swift */; };
+		EE608BE62710929E002BC9DB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BE52710929E002BC9DB /* Profile.swift */; };
+		EE608BE8271092A9002BC9DB /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BE7271092A9002BC9DB /* Company.swift */; };
+		EE608BEA2710972A002BC9DB /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BE927109729002BC9DB /* UserDetail.swift */; };
+		EE608BEC27133DEE002BC9DB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE608BEB27133DEE002BC9DB /* UIImageView.swift */; };
+		EE7660DC2709C9F90045510E /* Air.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7660DB2709C9F90045510E /* Air.storyboard */; };
+		EE7660FB2709CC020045510E /* InfoPulsaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7660FA2709CC020045510E /* InfoPulsaViewController.swift */; };
+		EE7660FF2709CC130045510E /* InputPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7660FE2709CC130045510E /* InputPhoneNumberViewController.swift */; };
+		EE7661022709CC230045510E /* PaymentOptionPulsaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661012709CC230045510E /* PaymentOptionPulsaViewController.swift */; };
+		EE7661052709CC310045510E /* PaymentVaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661042709CC310045510E /* PaymentVaViewController.swift */; };
+		EE7661082709CC3D0045510E /* PaymentSaldoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661072709CC3D0045510E /* PaymentSaldoViewController.swift */; };
+		EE76610B2709CC4A0045510E /* BpjsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76610A2709CC4A0045510E /* BpjsViewController.swift */; };
+		EE76610E2709CC550045510E /* BpjsDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76610D2709CC550045510E /* BpjsDetailInfoViewController.swift */; };
+		EE7661112709CC650045510E /* AirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661102709CC650045510E /* AirViewController.swift */; };
+		EE7661142709CC740045510E /* ListrikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661132709CC740045510E /* ListrikViewController.swift */; };
+		EE7661182709CCC20045510E /* PulsaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7661162709CCC20045510E /* PulsaCollectionViewCell.swift */; };
+		EE7661192709CCC20045510E /* PulsaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7661172709CCC20045510E /* PulsaCollectionViewCell.xib */; };
+		EE76611C270AA4230045510E /* Loan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE76611B270AA4230045510E /* Loan.storyboard */; };
+		EE766120270AA4710045510E /* ApplyLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76611F270AA4710045510E /* ApplyLoanViewController.swift */; };
+		EE766123270AA47F0045510E /* LoanDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE766122270AA47F0045510E /* LoanDataViewController.swift */; };
+		EE766126270AA4910045510E /* LoanFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE766125270AA4910045510E /* LoanFinishViewController.swift */; };
+		EE766129270AE0760045510E /* DetailLoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE766128270AE0760045510E /* DetailLoanViewController.swift */; };
+		EE76612C270AE0B80045510E /* DetailItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76612B270AE0B80045510E /* DetailItemViewController.swift */; };
 		EE92928826FD07BA00C675DD /* ListBoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92928626FD07BA00C675DD /* ListBoxCollectionViewCell.swift */; };
 		EE92928926FD07BA00C675DD /* ListBoxCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE92928726FD07BA00C675DD /* ListBoxCollectionViewCell.xib */; };
 		EE92928E26FD0B8D00C675DD /* PopupSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */; };
 		EE92928F26FD0B8D00C675DD /* PopupSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */; };
 		EEB77D2726AD89B600FAC183 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB77D2626AD89B600FAC183 /* Register.swift */; };
+		EEB96CD9270B2FD300F48365 /* AboutAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB96CD8270B2FD300F48365 /* AboutAppsViewController.swift */; };
 		EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CA2695BA4800FBCA76 /* Storyboards.swift */; };
 		EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */; };
 		EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */; };
@@ -88,6 +117,9 @@
 		EECE83F02695BDAD00FBCA76 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83EF2695BDAD00FBCA76 /* ForgotPasswordViewController.swift */; };
 		EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83F42695BE5200FBCA76 /* TermsConditionsViewController.swift */; };
 		EECE83F82695BE7800FBCA76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE83F72695BE7800FBCA76 /* HomeViewController.swift */; };
+		EEFE5158270F3CD700B8FF37 /* UserTransaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEFE5157270F3CD700B8FF37 /* UserTransaction.storyboard */; };
+		EEFE515B270F5D7A00B8FF37 /* PopupAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE5159270F5D7A00B8FF37 /* PopupAlertViewController.swift */; };
+		EEFE515C270F5D7A00B8FF37 /* PopupAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFE515A270F5D7A00B8FF37 /* PopupAlertViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +128,9 @@
 		E2393E63911ECBFD90B8C1C8 /* Pods-Koperasi Astra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koperasi Astra.release.xcconfig"; path = "Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra.release.xcconfig"; sourceTree = "<group>"; };
 		EE004DFB26A52F56005A8223 /* ButtonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonListTableViewCell.swift; sourceTree = "<group>"; };
 		EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonListTableViewCell.xib; sourceTree = "<group>"; };
+		EE02CF102709C71E0096B25B /* Pulsa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pulsa.storyboard; sourceTree = "<group>"; };
+		EE02CF2C2709C73E0096B25B /* Listrik.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Listrik.storyboard; sourceTree = "<group>"; };
+		EE02CF2F2709C75A0096B25B /* Bpjs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bpjs.storyboard; sourceTree = "<group>"; };
 		EE0AEA90268F392F0049A603 /* Koperasi Astra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koperasi Astra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0AEA93268F392F0049A603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0AEA9C268F39310049A603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,11 +194,37 @@
 		EE43F191269E8DA8002C6C8A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EE43F195269E908B002C6C8A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EE43F198269E98C3002C6C8A /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		EE608BDF271089C8002BC9DB /* AuthCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCheck.swift; sourceTree = "<group>"; };
+		EE608BE127108EF3002BC9DB /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		EE608BE32710928B002BC9DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE608BE52710929E002BC9DB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		EE608BE7271092A9002BC9DB /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		EE608BE927109729002BC9DB /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		EE608BEB27133DEE002BC9DB /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		EE7660DB2709C9F90045510E /* Air.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Air.storyboard; sourceTree = "<group>"; };
+		EE7660FA2709CC020045510E /* InfoPulsaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPulsaViewController.swift; sourceTree = "<group>"; };
+		EE7660FE2709CC130045510E /* InputPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		EE7661012709CC230045510E /* PaymentOptionPulsaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionPulsaViewController.swift; sourceTree = "<group>"; };
+		EE7661042709CC310045510E /* PaymentVaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVaViewController.swift; sourceTree = "<group>"; };
+		EE7661072709CC3D0045510E /* PaymentSaldoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSaldoViewController.swift; sourceTree = "<group>"; };
+		EE76610A2709CC4A0045510E /* BpjsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpjsViewController.swift; sourceTree = "<group>"; };
+		EE76610D2709CC550045510E /* BpjsDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BpjsDetailInfoViewController.swift; sourceTree = "<group>"; };
+		EE7661102709CC650045510E /* AirViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirViewController.swift; sourceTree = "<group>"; };
+		EE7661132709CC740045510E /* ListrikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListrikViewController.swift; sourceTree = "<group>"; };
+		EE7661162709CCC20045510E /* PulsaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE7661172709CCC20045510E /* PulsaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PulsaCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE76611B270AA4230045510E /* Loan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loan.storyboard; sourceTree = "<group>"; };
+		EE76611F270AA4710045510E /* ApplyLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLoanViewController.swift; sourceTree = "<group>"; };
+		EE766122270AA47F0045510E /* LoanDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDataViewController.swift; sourceTree = "<group>"; };
+		EE766125270AA4910045510E /* LoanFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFinishViewController.swift; sourceTree = "<group>"; };
+		EE766128270AE0760045510E /* DetailLoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLoanViewController.swift; sourceTree = "<group>"; };
+		EE76612B270AE0B80045510E /* DetailItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemViewController.swift; sourceTree = "<group>"; };
 		EE92928626FD07BA00C675DD /* ListBoxCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBoxCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE92928726FD07BA00C675DD /* ListBoxCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListBoxCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectionViewController.xib; sourceTree = "<group>"; };
 		EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectionViewController.swift; sourceTree = "<group>"; };
 		EEB77D2626AD89B600FAC183 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		EEB96CD8270B2FD300F48365 /* AboutAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppsViewController.swift; sourceTree = "<group>"; };
 		EECE83CA2695BA4800FBCA76 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		EECE83CE2695BA7500FBCA76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EECE83D12695BA9200FBCA76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +237,9 @@
 		EECE83EF2695BDAD00FBCA76 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		EECE83F42695BE5200FBCA76 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
 		EECE83F72695BE7800FBCA76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EEFE5157270F3CD700B8FF37 /* UserTransaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTransaction.storyboard; sourceTree = "<group>"; };
+		EEFE5159270F5D7A00B8FF37 /* PopupAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlertViewController.swift; sourceTree = "<group>"; };
+		EEFE515A270F5D7A00B8FF37 /* PopupAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupAlertViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +278,17 @@
 				EE004DFC26A52F56005A8223 /* ButtonListTableViewCell.xib */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		EE02CF0F2709C7030096B25B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE02CF102709C71E0096B25B /* Pulsa.storyboard */,
+				EE02CF2C2709C73E0096B25B /* Listrik.storyboard */,
+				EE02CF2F2709C75A0096B25B /* Bpjs.storyboard */,
+				EE7660DB2709C9F90045510E /* Air.storyboard */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		EE0AEA87268F392F0049A603 = {
@@ -256,6 +331,8 @@
 			isa = PBXGroup;
 			children = (
 				EE13863D26ADA9980014AB97 /* CollectionListViewController.swift */,
+				EE766128270AE0760045510E /* DetailLoanViewController.swift */,
+				EE76612B270AE0B80045510E /* DetailItemViewController.swift */,
 			);
 			path = "Bottom Sheet";
 			sourceTree = "<group>";
@@ -273,6 +350,8 @@
 				EE3496BB2704E6FA00233C48 /* AddressCollectionViewCell.xib */,
 				EE3496BF2704E70B00233C48 /* ListPinjamanCollectionViewCell.swift */,
 				EE3496C02704E70B00233C48 /* ListPinjamanCollectionViewCell.xib */,
+				EE7661162709CCC20045510E /* PulsaCollectionViewCell.swift */,
+				EE7661172709CCC20045510E /* PulsaCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -288,6 +367,7 @@
 				EE3496AC2704E64500233C48 /* AboutUsViewController.swift */,
 				EE3496AF2704E65300233C48 /* ChangePasswordViewController.swift */,
 				EE3496B22704E66100233C48 /* AddressSetupViewController.swift */,
+				EEB96CD8270B2FD300F48365 /* AboutAppsViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -304,6 +384,15 @@
 			isa = PBXGroup;
 			children = (
 				EE24FC6526A46A7F00A44307 /* ServiceViewController.swift */,
+				EE7660FA2709CC020045510E /* InfoPulsaViewController.swift */,
+				EE7660FE2709CC130045510E /* InputPhoneNumberViewController.swift */,
+				EE7661012709CC230045510E /* PaymentOptionPulsaViewController.swift */,
+				EE7661042709CC310045510E /* PaymentVaViewController.swift */,
+				EE7661072709CC3D0045510E /* PaymentSaldoViewController.swift */,
+				EE76610A2709CC4A0045510E /* BpjsViewController.swift */,
+				EE76610D2709CC550045510E /* BpjsDetailInfoViewController.swift */,
+				EE7661102709CC650045510E /* AirViewController.swift */,
+				EE7661132709CC740045510E /* ListrikViewController.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -343,11 +432,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		EE76611E270AA4470045510E /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				EE76611F270AA4710045510E /* ApplyLoanViewController.swift */,
+				EE766122270AA47F0045510E /* LoanDataViewController.swift */,
+				EE766125270AA4910045510E /* LoanFinishViewController.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
 		EE92928B26FD0B8D00C675DD /* PopupView */ = {
 			isa = PBXGroup;
 			children = (
 				EE92928C26FD0B8D00C675DD /* PopupSelectionViewController.xib */,
 				EE92928D26FD0B8D00C675DD /* PopupSelectionViewController.swift */,
+				EEFE5159270F5D7A00B8FF37 /* PopupAlertViewController.swift */,
+				EEFE515A270F5D7A00B8FF37 /* PopupAlertViewController.xib */,
 			);
 			path = PopupView;
 			sourceTree = "<group>";
@@ -355,6 +456,8 @@
 		EECE83C32695B5C900FBCA76 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				EEFE5156270F3CC000B8FF37 /* User */,
+				EE02CF0F2709C7030096B25B /* Services */,
 				EECE83CA2695BA4800FBCA76 /* Storyboards.swift */,
 				EECE83D52695BAAE00FBCA76 /* LoginRegister.storyboard */,
 				EECE83D82695BABB00FBCA76 /* Dashboard.storyboard */,
@@ -365,6 +468,7 @@
 				EE24FC5426A33E9000A44307 /* Credit.storyboard */,
 				EE24FC5726A33E9E00A44307 /* User.storyboard */,
 				EE13863926ADA9610014AB97 /* BottomSheet.storyboard */,
+				EE76611B270AA4230045510E /* Loan.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -372,6 +476,7 @@
 		EECE83C42695B5CE00FBCA76 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EE76611E270AA4470045510E /* Loan */,
 				EE24FC6026A46A6800A44307 /* Service */,
 				EE24FC5F26A46A6300A44307 /* Credit */,
 				EE24FC5A26A46A1900A44307 /* User */,
@@ -389,6 +494,12 @@
 			children = (
 				EE3863D626A861DE0093DC79 /* Authentication.swift */,
 				EEB77D2626AD89B600FAC183 /* Register.swift */,
+				EE608BDF271089C8002BC9DB /* AuthCheck.swift */,
+				EE608BE127108EF3002BC9DB /* BaseResponse.swift */,
+				EE608BE32710928B002BC9DB /* User.swift */,
+				EE608BE52710929E002BC9DB /* Profile.swift */,
+				EE608BE7271092A9002BC9DB /* Company.swift */,
+				EE608BE927109729002BC9DB /* UserDetail.swift */,
 			);
 			path = "Model Data";
 			sourceTree = "<group>";
@@ -423,6 +534,7 @@
 				EE43F15A2695C5F7002C6C8A /* Constants.swift */,
 				EE43F191269E8DA8002C6C8A /* Reachability.swift */,
 				EE3863D926A869F30093DC79 /* UITextField.swift */,
+				EE608BEB27133DEE002BC9DB /* UIImageView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -463,6 +575,14 @@
 				EECE83F72695BE7800FBCA76 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		EEFE5156270F3CC000B8FF37 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EEFE5157270F3CD700B8FF37 /* UserTransaction.storyboard */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,22 +652,30 @@
 				EE24FC7026A477F400A44307 /* NavigationBar.xib in Resources */,
 				EE43F17A2695CAE8002C6C8A /* Poppins-Thin.otf in Resources */,
 				EE004DFE26A52F56005A8223 /* ButtonListTableViewCell.xib in Resources */,
+				EE7660DC2709C9F90045510E /* Air.storyboard in Resources */,
 				EE3496B82704E6E700233C48 /* ListTransaksiCollectionViewCell.xib in Resources */,
+				EE76611C270AA4230045510E /* Loan.storyboard in Resources */,
 				EE13863A26ADA9610014AB97 /* BottomSheet.storyboard in Resources */,
 				EE43F1782695CAE8002C6C8A /* Poppins-Regular.otf in Resources */,
 				EE24FC5526A33E9000A44307 /* Credit.storyboard in Resources */,
+				EE02CF2D2709C73E0096B25B /* Listrik.storyboard in Resources */,
+				EE02CF302709C75A0096B25B /* Bpjs.storyboard in Resources */,
 				EE43F1792695CAE8002C6C8A /* Poppins-SemiBoldItalic.otf in Resources */,
 				EECE83E12695BD0900FBCA76 /* Onboarding.storyboard in Resources */,
 				EE92928926FD07BA00C675DD /* ListBoxCollectionViewCell.xib in Resources */,
 				EE43F17C2695CAE8002C6C8A /* Poppins-BoldItalic.otf in Resources */,
 				EE43F1852695CAE8002C6C8A /* Poppins-BlackItalic.otf in Resources */,
 				EE43F1842695CAE8002C6C8A /* Poppins-Medium.otf in Resources */,
+				EEFE5158270F3CD700B8FF37 /* UserTransaction.storyboard in Resources */,
 				EECE83D92695BABB00FBCA76 /* Dashboard.storyboard in Resources */,
+				EE7661192709CCC20045510E /* PulsaCollectionViewCell.xib in Resources */,
 				EE24FC5226A33E8300A44307 /* Service.storyboard in Resources */,
 				EE43F17B2695CAE8002C6C8A /* Poppins-Italic.otf in Resources */,
 				EE43F1832695CAE8002C6C8A /* Poppins-ExtraLight.otf in Resources */,
+				EE02CF112709C71E0096B25B /* Pulsa.storyboard in Resources */,
 				EECE83D62695BAAE00FBCA76 /* LoginRegister.storyboard in Resources */,
 				EE43F1822695CAE8002C6C8A /* Poppins-ExtraLightItalic.otf in Resources */,
+				EEFE515C270F5D7A00B8FF37 /* PopupAlertViewController.xib in Resources */,
 				EE24FC4F26A33E0600A44307 /* Home.storyboard in Resources */,
 				EE43F17F2695CAE8002C6C8A /* Poppins-ThinItalic.otf in Resources */,
 				EE43F1542695C542002C6C8A /* SplashScreen.storyboard in Resources */,
@@ -614,47 +742,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE13863E26ADA9980014AB97 /* CollectionListViewController.swift in Sources */,
+				EE7660FF2709CC130045510E /* InputPhoneNumberViewController.swift in Sources */,
+				EE7661022709CC230045510E /* PaymentOptionPulsaViewController.swift in Sources */,
+				EE766126270AA4910045510E /* LoanFinishViewController.swift in Sources */,
+				EE76612C270AE0B80045510E /* DetailItemViewController.swift in Sources */,
 				EE43F196269E908B002C6C8A /* GradientView.swift in Sources */,
 				EE43F1582695C59C002C6C8A /* ApiHelper.swift in Sources */,
 				EECE83CF2695BA7500FBCA76 /* LoginViewController.swift in Sources */,
+				EE7661082709CC3D0045510E /* PaymentSaldoViewController.swift in Sources */,
 				EE3496AD2704E64500233C48 /* AboutUsViewController.swift in Sources */,
 				EECE83E62695BD3300FBCA76 /* OnboardingViewController.swift in Sources */,
+				EE766120270AA4710045510E /* ApplyLoanViewController.swift in Sources */,
 				EE3496B02704E65300233C48 /* ChangePasswordViewController.swift in Sources */,
 				EECE83CB2695BA4800FBCA76 /* Storyboards.swift in Sources */,
 				EE92928826FD07BA00C675DD /* ListBoxCollectionViewCell.swift in Sources */,
+				EE7660FB2709CC020045510E /* InfoPulsaViewController.swift in Sources */,
+				EE608BE0271089C8002BC9DB /* AuthCheck.swift in Sources */,
 				EE3496C12704E70B00233C48 /* ListPinjamanCollectionViewCell.swift in Sources */,
 				EE24FC6D26A477D200A44307 /* NavigationBar.swift in Sources */,
+				EEB96CD9270B2FD300F48365 /* AboutAppsViewController.swift in Sources */,
 				EEB77D2726AD89B600FAC183 /* Register.swift in Sources */,
 				EE43F1622695CA23002C6C8A /* CardView.swift in Sources */,
 				EE24FC6626A46A7F00A44307 /* ServiceViewController.swift in Sources */,
 				EE3863D726A861DE0093DC79 /* Authentication.swift in Sources */,
+				EE7661142709CC740045510E /* ListrikViewController.swift in Sources */,
 				EECE83ED2695BD8B00FBCA76 /* OtpViewController.swift in Sources */,
+				EE766129270AE0760045510E /* DetailLoanViewController.swift in Sources */,
 				EE24FC5C26A46A2900A44307 /* UserViewController.swift in Sources */,
 				EE3496AA2704E63600233C48 /* ContactUsViewController.swift in Sources */,
+				EEFE515B270F5D7A00B8FF37 /* PopupAlertViewController.swift in Sources */,
+				EE7661182709CCC20045510E /* PulsaCollectionViewCell.swift in Sources */,
 				EE24FC6926A46C1C00A44307 /* DashboardNavigationViewController.swift in Sources */,
 				EE3496B32704E66100233C48 /* AddressSetupViewController.swift in Sources */,
 				EE004DFD26A52F56005A8223 /* ButtonListTableViewCell.swift in Sources */,
 				EE43F199269E98C3002C6C8A /* RegisterSuccessViewController.swift in Sources */,
 				EECE83F02695BDAD00FBCA76 /* ForgotPasswordViewController.swift in Sources */,
 				EE3496B72704E6E700233C48 /* ListTransaksiCollectionViewCell.swift in Sources */,
+				EE76610E2709CC550045510E /* BpjsDetailInfoViewController.swift in Sources */,
+				EE76610B2709CC4A0045510E /* BpjsViewController.swift in Sources */,
 				EE3496A12704DF8E00233C48 /* PersonalDataViewController.swift in Sources */,
 				EE43F18F269E8D39002C6C8A /* BaseViewController.swift in Sources */,
+				EE608BE42710928B002BC9DB /* User.swift in Sources */,
+				EE7661112709CC650045510E /* AirViewController.swift in Sources */,
+				EE608BEA2710972A002BC9DB /* UserDetail.swift in Sources */,
+				EE7661052709CC310045510E /* PaymentVaViewController.swift in Sources */,
 				EE3496A72704E62800233C48 /* ListPinjamanViewController.swift in Sources */,
 				EE43F1632695CA23002C6C8A /* ButtonTemplate.swift in Sources */,
 				EECE83F82695BE7800FBCA76 /* HomeViewController.swift in Sources */,
 				EE43F15E2695C989002C6C8A /* UserAuthViewModel.swift in Sources */,
+				EE608BEC27133DEE002BC9DB /* UIImageView.swift in Sources */,
 				EE43F15B2695C5F7002C6C8A /* Constants.swift in Sources */,
+				EE766123270AA47F0045510E /* LoanDataViewController.swift in Sources */,
+				EE608BE227108EF3002BC9DB /* BaseResponse.swift in Sources */,
 				EECE83F52695BE5200FBCA76 /* TermsConditionsViewController.swift in Sources */,
 				EECE83D22695BA9200FBCA76 /* DashboardViewController.swift in Sources */,
 				EE92928F26FD0B8D00C675DD /* PopupSelectionViewController.swift in Sources */,
 				EE43F192269E8DA8002C6C8A /* Reachability.swift in Sources */,
 				EE13864426ADAAAF0014AB97 /* ButtonWithImageCollectionViewCell.swift in Sources */,
 				EE3863DA26A869F30093DC79 /* UITextField.swift in Sources */,
+				EE608BE62710929E002BC9DB /* Profile.swift in Sources */,
 				EE3496A42704E61700233C48 /* ListTransaksiViewController.swift in Sources */,
 				EECE83DC2695BAF900FBCA76 /* RegisterViewController.swift in Sources */,
 				EE43F1502695C522002C6C8A /* LaunchScreenViewController.swift in Sources */,
 				EE3496BC2704E6FA00233C48 /* AddressCollectionViewCell.swift in Sources */,
 				EE0AEA94268F392F0049A603 /* AppDelegate.swift in Sources */,
+				EE608BE8271092A9002BC9DB /* Company.swift in Sources */,
 				EE24FC6226A46A7500A44307 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,15 +936,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W4FWM87L9U;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4V9LPUG4HJ;
 				INFOPLIST_FILE = "Koperasi Astra/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KoperasiAstra.Koperasi-Astra";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koperasiAstra.koperasiastra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "KoperasiAstra.Koperasi-Astra";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -804,15 +958,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W4FWM87L9U;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4V9LPUG4HJ;
 				INFOPLIST_FILE = "Koperasi Astra/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KoperasiAstra.Koperasi-Astra";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koperasiAstra.koperasiastra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "KoperasiAstra.Koperasi-Astra";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -69,6 +69,7 @@ PODS:
     - DynamicBlurView (~> 4.0)
   - PromisesObjC (1.2.12)
   - SkeletonView (1.13.0)
+  - SkyFloatingLabelTextField (3.8.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - Nuke
   - PopupDialog
   - SkeletonView
+  - SkyFloatingLabelTextField (~> 3.0)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -108,6 +110,7 @@ SPEC REPOS:
     - PopupDialog
     - PromisesObjC
     - SkeletonView
+    - SkyFloatingLabelTextField
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -132,8 +135,9 @@ SPEC CHECKSUMS:
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: b12b8c89bf4270219afcbd239cdf8c393a5fc8d1
+PODFILE CHECKSUM: 88ed47f5aeff0ec4c32fe6b731365873d861f009
 
 COCOAPODS: 1.10.1

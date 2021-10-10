@@ -13,6 +13,7 @@ class UserViewController: BaseViewController {
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var userMenuTableView: UITableView!
     
+    let vmUser = UserAuthViewModel()
     var titleList = [
         "Data Personal",
         "Pengaturan Alamat",
@@ -77,7 +78,7 @@ class UserViewController: BaseViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func aboutAppsButtonTap(_ sender: Any) {
-        let vc = StoryboardScene.User.AboutUsViewController.instantiate()
+        let vc = StoryboardScene.User.AboutAppsViewController.instantiate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func contactUsButtonTap(_ sender: Any) {

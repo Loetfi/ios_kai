@@ -74,7 +74,46 @@ extension ServiceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if titleList[indexPath.row] == "Pulsa" {
+            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if titleList[indexPath.row] == "Paket Internet" {
+            let vc = StoryboardScene.Pulsa.InputPhoneNumberViewController.instantiate()
+            vc.isPaketData = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if titleList[indexPath.row] == "BPJS" {
+            let vc = StoryboardScene.Bpjs.BpjsViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if titleList[indexPath.row] == "Listrik" {
+            let vc = StoryboardScene.Listrik.ListrikViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+
+        }
+        if titleList[indexPath.row] == "Tagihan Air" {
+            let vc = StoryboardScene.Air.AirViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+//            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
+        if titleList[indexPath.row] == "Simpan Pinjam" {
+            let vc = StoryboardScene.Loan.ApplyLoanViewController.instantiate()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if titleList[indexPath.row] == "Hotel" {
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
+        if titleList[indexPath.row] == "Flight" {
+            showToast(message: "FITUR INI BELUM TERSEDIA")
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
