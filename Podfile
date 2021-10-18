@@ -34,5 +34,7 @@ target 'Koperasi Astra' do
   pod 'FittedSheets'
 
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  
+  pod 'CameraManager', '~> 5.1'
 
 end

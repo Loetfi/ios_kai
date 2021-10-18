@@ -20,6 +20,7 @@ class InfoPulsaViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,8 +28,8 @@ class InfoPulsaViewController: BaseViewController {
         lblPhone.text = phoneNumber
         lblPaketName.text = content
         navigationBarSetup(navBar: navigationBar, title: "Pulsa", hideBackButton: false)
-
     }
+    
     @IBAction func nextButtonTap(_ sender: Any) {
         let vc = StoryboardScene.Pulsa.PaymentOptionPulsaViewController.instantiate()
         vc.price = price

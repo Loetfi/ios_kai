@@ -15,12 +15,16 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var vPageControl: FSPageControl!
     @IBOutlet weak var cvList: UICollectionView!
     
+    @IBOutlet weak var lblBalance: UILabel!
+    @IBOutlet weak var lblUsername: UILabel!
+    
     let inset: CGFloat = 10
     let minimumLineSpacing: CGFloat = 10
     let minimumInteritemSpacing: CGFloat = 10
     let cellsPerRow = 4
     let vmAuth = UserAuthViewModel()
-    
+    let vmLoan = LoanViewModel()
+
     var buttonList = ["Pulsa",
                       "Paket Internet",
                       "Listrik",
@@ -49,6 +53,8 @@ class HomeViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.postCheckAuth()
+        self.getUserDetail()
+        self.getMicroloanBalance()
     }
     
     func setupCell(){
@@ -100,6 +106,72 @@ class HomeViewController: BaseViewController {
         self.vPager.isInfinite = true
         self.vPageControl.setFillColor(UIColor(named: "green03"), for: .selected)
         self.vPageControl.setFillColor(UIColor(named: "black04"), for: .normal)
+    }
+    
+    func getUserDetail() {
+        showLoading()
+        vmAuth.getUserDetails(
+            body: ["id":userId],
+            onSuccess: { response,message in
+                self.hideLoading()
+//                let urlPhoto = response.profile?.personalPhoto ?? ""
+                let name = response.profile?.name ?? ""
+                let email = response.profile?.email ?? ""
+                let username = response.user?.username ?? ""
+                let idKoperasi = response.profile?.idKoperasi ?? ""
+                let joinDate = response.profile?.dateBecomeMember ?? ""
+//                let motherName = response.profile?.motherName ?? ""
+//                let birthdate = response.profile?.birthDate ?? ""
+//                let birthPlace = response.profile?.birthPlace ?? ""
+//                let agama = response.profile?.idReligion ?? ""
+//                let noKtp = response.profile?.identityId ?? ""
+//                let jenisKelamin = response.profile?.idGender ?? ""
+//                let noHandphone = response.profile?.phoneNumber ?? ""
+//                let statusKawin = response.profile?.idMarriageStatus ?? ""
+//                let statusTempat = response.profile?.idDomicileAddressStatus ?? ""
+//                let noNpwp = response.profile?.npwpNo ?? ""
+
+                let defaults = UserDefaults.standard
+                
+                defaults.set(username, forKey: "username")
+                defaults.set(name, forKey: "name")
+                defaults.set(email, forKey: "email")
+                defaults.set(joinDate, forKey: "joinDate")
+                defaults.set(idKoperasi, forKey: "idKoperasi")
+
+                self.lblUsername.text = name
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            })
+    }
+    
+    func getMicroloanBalance() {
+        showLoading()
+        vmLoan.getMicroloanBalance(
+            onSuccess: { response,message in
+                self.hideLoading()
+                let plafond = response.plafond ?? 0
+                let unpaid = response.unpaid ?? 0
+                let balance = response.balance ?? 0
+
+                let defaults = UserDefaults.standard
+                
+                defaults.set(plafond, forKey: "plafond")
+                defaults.set(unpaid, forKey: "unpaid")
+                defaults.set(balance, forKey: "balance")
+
+                self.lblBalance.text = "Rp \(balance)"
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            })
     }
     
     @IBAction func searchButton(_ sender: Any) {

@@ -31,12 +31,13 @@ class ApiHelper: NSObject {
     
     public func getRequest<T: Codable>(url: String, body: Parameters, onSuccess: @escaping (T,String) -> Void, onError: @escaping (String) -> Void, onFailed: @escaping (String) -> Void) {
         let headers: HTTPHeaders = [
-            "Content-Type": "application/application/json"
+            "accept": "application/json"
         ]
         
         AF.request(url, method: .get, encoding: JSONEncoding.default, headers: headers).response { response in
             switch response.result {
             case .failure(let error):
+                print(error.localizedDescription)
                 onFailed(error.localizedDescription)
             case .success(let value):
                 let json = JSON(value ?? Data())
@@ -68,6 +69,7 @@ class ApiHelper: NSObject {
         AF.request(url, method: .get, encoding: JSONEncoding.default, headers: headers).response { response in
             switch response.result {
             case .failure(let error):
+                print(error.localizedDescription)
                 onFailed(error.localizedDescription)
             case .success(let value):
                 let json = JSON(value ?? Data())
@@ -79,6 +81,7 @@ class ApiHelper: NSObject {
                         let result = try decoder.decode(T.self, from: BaseResponse(json: json).data.rawData())
                         onSuccess(result,message.stringValue)
                     } else {
+                        print(message.stringValue)
                         onFailed(message.stringValue)
                     }
                 } catch let error {

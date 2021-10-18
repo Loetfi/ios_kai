@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hLh-I4-3C0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hLh-I4-3C0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,22 +30,22 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-UQ-2dy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="502.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="518"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6XL-oZ-iLC">
-                                                <rect key="frame" x="20" y="160" width="374" height="152"/>
+                                                <rect key="frame" x="20" y="160" width="374" height="158"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="svX-9h-ecF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Anggota Koperasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFA-6n-Nwc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan No. Anggota Koperasi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-jW-0XE">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="3jt-H5-e0j"/>
                                                                 </constraints>
@@ -54,16 +55,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KKq-YR-AR5">
-                                                        <rect key="frame" x="0.0" y="86" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="89" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGC-5D-QLN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmN-kG-Cdi">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="4QL-L8-2VT"/>
                                                                 </constraints>
@@ -75,7 +76,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9og-CH-c5X" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="363" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="372" width="374" height="50"/>
                                                 <color key="backgroundColor" name="green03"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="s8s-Oo-DKe"/>
@@ -98,16 +99,16 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T0P-Zs-c3n">
-                                                <rect key="frame" x="138.5" y="437" width="137" height="45.5"/>
+                                                <rect key="frame" x="131" y="446" width="152" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belum memiliki akun?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8X-1o-auY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" red="0.1529411765" green="0.094117647060000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-6R-zzO">
-                                                        <rect key="frame" x="0.0" y="16.5" width="137" height="29"/>
+                                                        <rect key="frame" x="0.0" y="20" width="152" height="32"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
                                                         <state key="normal" title="Daftar Sekarang">
                                                             <color key="titleColor" name="green03"/>
@@ -161,7 +162,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTN-HN-gWS">
-                                                <rect key="frame" x="288" y="323" width="106" height="29"/>
+                                                <rect key="frame" x="277" y="329" width="117" height="32"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
                                                 <state key="normal" title="Lupa Password?">
                                                     <color key="titleColor" name="green03"/>
@@ -190,7 +191,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL2-Ab-d6d">
-                                        <rect key="frame" x="360" y="262" width="26" height="50"/>
+                                        <rect key="frame" x="360" y="268" width="26" height="50"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="eye.slash" catalog="system"/>
                                         <connections>
@@ -260,22 +261,22 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQr-p1-4Jk">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1221.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1897"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-1A-WPF">
-                                                <rect key="frame" x="20" y="160" width="374" height="902"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-1A-WPF">
+                                                <rect key="frame" x="20" y="160" width="374" height="1571"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sk2-jO-Kim">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Lengkap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WU-ux-Sb7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Nama Lengkap" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-Tn-Ozd">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="BHb-qH-1M6"/>
                                                                 </constraints>
@@ -285,16 +286,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wfC-Ji-mNq">
-                                                        <rect key="frame" x="0.0" y="76" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="79" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OE-3Z-TSt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E10-Tb-IVR">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="ZiA-lb-GLd"/>
                                                                 </constraints>
@@ -304,16 +305,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-8O-5iD">
-                                                        <rect key="frame" x="0.0" y="152" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="158" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Handphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myi-3r-6WH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan No. Handphone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nY6-jW-T86">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="zMH-p7-Klh"/>
                                                                 </constraints>
@@ -323,16 +324,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-ee-yeX">
-                                                        <rect key="frame" x="0.0" y="228" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="237" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. KTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fo-xm-Sd9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan No. KTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkj-3X-33g">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="ntr-gA-egY"/>
                                                                 </constraints>
@@ -342,35 +343,41 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-HP-BeI">
-                                                        <rect key="frame" x="0.0" y="304" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="316" width="374" height="280"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto KTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-11-oci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unggah Foto KTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6MF-ca-87i">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="bdw-Yb-YGn"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCard" translatesAutoresizingMaskIntoConstraints="NO" id="qJX-62-UDm">
+                                                                <rect key="frame" x="0.0" y="71" width="374" height="209"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="209" id="31j-aW-03T"/>
+                                                                </constraints>
+                                                            </imageView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-Zc-JUa">
-                                                        <rect key="frame" x="0.0" y="380" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="606" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. NIK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-eI-rK7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan No. NIK" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8T-jh-PD8">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="9Yn-pS-vEP"/>
                                                                 </constraints>
@@ -380,16 +387,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HLg-DX-MuS">
-                                                        <rect key="frame" x="0.0" y="456" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="685" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Perusahaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv2-Kk-00T">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Nama Perusahaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1O-i3-HBb">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="a3g-iO-8bH"/>
                                                                 </constraints>
@@ -399,16 +406,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-H7-dAr">
-                                                        <rect key="frame" x="0.0" y="532" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="764" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qes-Rn-hWl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Department" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxJ-q8-dl0">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="eYu-sy-HjD"/>
                                                                 </constraints>
@@ -418,16 +425,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-CK-fZj">
-                                                        <rect key="frame" x="0.0" y="608" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="843" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-8b-c2I">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Divisi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXr-Fk-wg3">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="AvY-at-Ihb"/>
                                                                 </constraints>
@@ -437,16 +444,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ofx-aj-v8N">
-                                                        <rect key="frame" x="0.0" y="684" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="922" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYn-Dv-lWY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan Position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLk-fD-uTB">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="aTw-4a-hzO"/>
                                                                 </constraints>
@@ -456,47 +463,59 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HIv-n7-Jso">
-                                                        <rect key="frame" x="0.0" y="760" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="1001" width="374" height="280"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto Kartu ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a34-sf-Hm2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unggah Kartu ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ilz-9h-w1d">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="Oqn-Hn-m7S"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCard" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-W4-nke">
+                                                                <rect key="frame" x="0.0" y="71" width="374" height="209"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="209" id="5ki-HR-DLg"/>
+                                                                </constraints>
+                                                            </imageView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7XD-DJ-pDx">
-                                                        <rect key="frame" x="0.0" y="836" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="1291" width="374" height="280"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foto Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RW-Po-ehE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unggah Foto Profil" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJW-Sr-UgL">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="qwL-y3-Tu7"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCard" translatesAutoresizingMaskIntoConstraints="NO" id="m0U-Wy-BXi">
+                                                                <rect key="frame" x="0.0" y="71" width="374" height="209"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="209" id="NaQ-AV-PaH"/>
+                                                                </constraints>
+                                                            </imageView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DK-7j-qwx" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="1082" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="1751" width="374" height="50"/>
                                                 <color key="backgroundColor" name="green03"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="nIM-4a-5YO"/>
@@ -519,16 +538,16 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wrs-r6-g6H">
-                                                <rect key="frame" x="144.5" y="1156" width="125" height="45.5"/>
+                                                <rect key="frame" x="137.5" y="1825" width="139.5" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sudah punya akun?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-UC-82a">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" red="0.1529411765" green="0.094117647060000004" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgH-w9-mT5">
-                                                        <rect key="frame" x="0.0" y="16.5" width="125" height="29"/>
+                                                        <rect key="frame" x="0.0" y="20" width="139.5" height="32"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" name="green03"/>
@@ -541,7 +560,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kq-86-XHu">
-                                                <rect key="frame" x="360" y="480" width="24" height="50"/>
+                                                <rect key="frame" x="360" y="495" width="24" height="50"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="tray.and.arrow.up" catalog="system"/>
                                                 <connections>
@@ -549,7 +568,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-F3-c9b">
-                                                <rect key="frame" x="360" y="936" width="24" height="50"/>
+                                                <rect key="frame" x="360" y="1180" width="24" height="50"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="tray.and.arrow.up" catalog="system"/>
                                                 <connections>
@@ -557,7 +576,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVa-j5-37s">
-                                                <rect key="frame" x="360" y="1012" width="24" height="50"/>
+                                                <rect key="frame" x="360" y="1470" width="24" height="50"/>
                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="tray.and.arrow.up" catalog="system"/>
                                                 <connections>
@@ -607,19 +626,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tme-0K-UUa">
-                                                <rect key="frame" x="20" y="480" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="495" width="374" height="50"/>
                                                 <connections>
                                                     <action selector="uploadKtpButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="jDv-Qr-gVc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoF-LA-AHb">
-                                                <rect key="frame" x="20" y="936" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="1180" width="374" height="50"/>
                                                 <connections>
                                                     <action selector="uploadCardButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="vAo-Iq-HoH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-we-rKw">
-                                                <rect key="frame" x="20" y="1012" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="1470" width="374" height="50"/>
                                                 <connections>
                                                     <action selector="uploadProfilePhotoButtonAction:" destination="l4a-Kf-joF" eventType="touchUpInside" id="mdq-JR-eu1"/>
                                                 </connections>
@@ -721,6 +740,9 @@
                         <outlet property="btnUpIdCard" destination="SoF-LA-AHb" id="oSk-Rt-q5w"/>
                         <outlet property="btnUpKtpPhoto" destination="Tme-0K-UUa" id="nH3-5V-BWs"/>
                         <outlet property="btnUpProfilePhoto" destination="pjN-we-rKw" id="KjH-68-0i9"/>
+                        <outlet property="imgIdCard" destination="UE0-W4-nke" id="aer-dZ-Wwj"/>
+                        <outlet property="imgKtp" destination="qJX-62-UDm" id="ZkX-jE-YdU"/>
+                        <outlet property="imgProfile" destination="m0U-Wy-BXi" id="k1B-ab-xRa"/>
                         <outlet property="navigationBar" destination="aZX-cY-rfj" id="20G-FP-oND"/>
                         <outlet property="tfCardId" destination="Ilz-9h-w1d" id="ZFB-sN-Rfo"/>
                         <outlet property="tfCompanyName" destination="X1O-i3-HBb" id="Ysx-Fx-RpE"/>
@@ -752,10 +774,10 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72C-0F-8qD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="457"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="477"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnF-Bd-y7o" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="327" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="347" width="374" height="50"/>
                                                 <color key="backgroundColor" name="green03"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="cJp-on-cfj"/>
@@ -820,7 +842,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs7-3a-K9M">
-                                                <rect key="frame" x="20" y="387" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="407" width="374" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="OAc-tN-eWG"/>
@@ -845,16 +867,16 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="f2o-zj-ake">
-                                                <rect key="frame" x="20" y="154" width="374" height="148"/>
+                                                <rect key="frame" x="20" y="154" width="374" height="168"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Syarat &amp; Ketentuan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svD-Oy-va5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                                                         <color key="textColor" name="black01"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JT-Qz-Iv0">
-                                                        <rect key="frame" x="0.0" y="32" width="374" height="82"/>
+                                                        <rect key="frame" x="0.0" y="36" width="374" height="98"/>
                                                         <string key="text">Dengan mencentang ini, Anda setuju untuk
 memberikan data Anda kepada Koperasi Astra
 International untuk digunakan sebagai syarat
@@ -865,7 +887,7 @@ Astra International.</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MAo-e4-gft">
-                                                        <rect key="frame" x="0.0" y="126" width="374" height="22"/>
+                                                        <rect key="frame" x="0.0" y="146" width="374" height="22"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwV-Dw-pB3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
@@ -1013,10 +1035,10 @@ Astra International.</string>
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jar-La-BaM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="363"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="383"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-S8-Mel" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="293" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="313" width="374" height="50"/>
                                                 <color key="backgroundColor" name="green03"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="WDL-qz-UZn"/>
@@ -1081,16 +1103,16 @@ Astra International.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="a1S-cT-zHt">
-                                                <rect key="frame" x="20" y="154" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="154" width="374" height="134"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sukses Mendaftar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21M-hR-Ees">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                                                         <color key="textColor" name="black01"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmq-2C-nVw">
-                                                        <rect key="frame" x="0.0" y="32" width="374" height="82"/>
+                                                        <rect key="frame" x="0.0" y="36" width="374" height="98"/>
                                                         <string key="text">Selamat Anda berhasil mendaftar. Mohon untuk menunggu approval dari hrd &amp; admin keanggotaan KAI untuk mendapatkan Nomor VA Permata yang akan dikirim melalui sms. Dan silahkan lakukan transfer melalui VA Permata yang telah terkirim</string>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="black02"/>
@@ -1156,10 +1178,10 @@ Astra International.</string>
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuW-nb-1Lc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="472"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="483"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fYi-1M-miu">
-                                                <rect key="frame" x="20" y="342" width="374" height="110"/>
+                                                <rect key="frame" x="20" y="353" width="374" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gD-ab-vxt" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -1254,31 +1276,31 @@ Astra International.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zHa-uv-n05">
-                                                <rect key="frame" x="20" y="154" width="374" height="77"/>
+                                                <rect key="frame" x="20" y="154" width="374" height="88"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukkan kode OTP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkd-kn-vEI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="24"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
                                                         <color key="textColor" name="black01"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harap jangan beritahu kode OTP pada orang lain" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwq-bf-H0N">
-                                                        <rect key="frame" x="0.0" y="32" width="306.5" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="36" width="345" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="black01"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-Pd-Tsa">
-                                                        <rect key="frame" x="0.0" y="60.5" width="257" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="68" width="287" height="20"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kode expired dalam" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa9-jr-gSs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="126" height="16.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                                 <color key="textColor" name="black01"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1n-hk-wfl">
-                                                                <rect key="frame" x="131" y="0.0" width="126" height="16.5"/>
+                                                                <rect key="frame" x="246.5" y="0.0" width="40.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="14"/>
                                                                 <color key="textColor" name="green03"/>
                                                                 <nil key="highlightedColor"/>
@@ -1288,7 +1310,7 @@ Astra International.</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zAc-DV-hMJ">
-                                                <rect key="frame" x="85" y="259" width="244" height="55"/>
+                                                <rect key="frame" x="85" y="270" width="244" height="55"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cin-4A-eZo">
                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
@@ -1426,10 +1448,10 @@ Astra International.</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V63-f8-QuI">
-                                        <rect key="frame" x="0.0" y="56" width="414" height="315"/>
+                                        <rect key="frame" x="0.0" y="56" width="414" height="318"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOD-YH-TG3" customClass="ButtonTemplate" customModule="Koperasi_Astra" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="245" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="248" width="374" height="50"/>
                                                 <color key="backgroundColor" name="green03"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="XxX-xa-giW"/>
@@ -1494,19 +1516,19 @@ Astra International.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-c8-OA1">
-                                                <rect key="frame" x="20" y="154" width="374" height="66"/>
+                                                <rect key="frame" x="20" y="154" width="374" height="69"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-St-Fgj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="69"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Anggota Koperasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzM-7Z-q81">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="17"/>
                                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
                                                                 <color key="textColor" name="black02"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan No. Anggota Koperasi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZu-Kw-LeF">
-                                                                <rect key="frame" x="0.0" y="16" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="19" width="374" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="qrc-dC-TEA"/>
                                                                 </constraints>
@@ -1595,28 +1617,29 @@ Astra International.</string>
     </scenes>
     <designables>
         <designable name="2DK-7j-qwx">
-            <size key="intrinsicContentSize" width="47" height="32"/>
+            <size key="intrinsicContentSize" width="56" height="36"/>
         </designable>
         <designable name="7gD-ab-vxt">
-            <size key="intrinsicContentSize" width="79" height="32"/>
+            <size key="intrinsicContentSize" width="93" height="36"/>
         </designable>
         <designable name="9og-CH-c5X">
-            <size key="intrinsicContentSize" width="43" height="32"/>
+            <size key="intrinsicContentSize" width="47" height="36"/>
         </designable>
         <designable name="PnF-Bd-y7o">
-            <size key="intrinsicContentSize" width="83" height="32"/>
+            <size key="intrinsicContentSize" width="99" height="36"/>
         </designable>
         <designable name="VOD-YH-TG3">
-            <size key="intrinsicContentSize" width="55" height="32"/>
+            <size key="intrinsicContentSize" width="64" height="36"/>
         </designable>
         <designable name="ozg-S8-Mel">
-            <size key="intrinsicContentSize" width="43" height="32"/>
+            <size key="intrinsicContentSize" width="47" height="36"/>
         </designable>
     </designables>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="icLogoKoperasiAstra" width="200" height="140"/>
+        <image name="imgCard" width="331" height="209"/>
         <image name="tray.and.arrow.up" catalog="system" width="128" height="114"/>
         <namedColor name="black01">
             <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

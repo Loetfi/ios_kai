@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.2)
+  - CameraManager (5.1.3)
   - DynamicBlurView (4.1.0)
   - Firebase/CoreOnly (7.10.0):
     - FirebaseCore (= 7.10.0)
@@ -74,6 +75,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - CameraManager (~> 5.1)
   - Firebase/Messaging
   - FittedSheets
   - FSCalendar
@@ -90,6 +92,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CameraManager
     - DynamicBlurView
     - Firebase
     - FirebaseCore
@@ -115,6 +118,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  CameraManager: 73936a52093081ba5e44914e8120ab511360f5d4
   DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   Firebase: fffddd0bab8677d07376538365faa93ff3889b39
   FirebaseCore: ec566d917b2195fc2610aeb148dae99f57a788f9
@@ -138,6 +142,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 88ed47f5aeff0ec4c32fe6b731365873d861f009
+PODFILE CHECKSUM: 75261327f73384aead92cd68168f49451bc11710
 
 COCOAPODS: 1.10.1

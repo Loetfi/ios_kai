@@ -552,6 +552,9 @@ Saya</string>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="lblJoinDate" destination="0Fr-8c-ddQ" id="5I2-50-AcX"/>
+                        <outlet property="lblNik" destination="XQJ-YS-HTp" id="sHh-Lg-546"/>
+                        <outlet property="lblNomorAnggota" destination="uXL-46-dOa" id="qTF-dz-lrW"/>
                         <outlet property="navBar" destination="0Xb-rA-qgW" id="NXW-HY-Ycq"/>
                     </connections>
                 </viewController>
@@ -3136,17 +3139,89 @@ dalam berbagai bidang</string>
         </scene>
     </scenes>
     <designables>
+        <designable name="1Hl-e9-KCD">
+            <size key="intrinsicContentSize" width="69" height="34"/>
+        </designable>
+        <designable name="2e0-zv-DpV">
+            <size key="intrinsicContentSize" width="216.5" height="34"/>
+        </designable>
+        <designable name="4ok-yI-NV7">
+            <size key="intrinsicContentSize" width="126.5" height="34"/>
+        </designable>
+        <designable name="Cun-uZ-PT9">
+            <size key="intrinsicContentSize" width="131.5" height="34"/>
+        </designable>
         <designable name="DEk-nL-pXw">
             <size key="intrinsicContentSize" width="163" height="36"/>
+        </designable>
+        <designable name="GKA-ig-Tlm">
+            <size key="intrinsicContentSize" width="144" height="34"/>
         </designable>
         <designable name="HYx-QD-CD5">
             <size key="intrinsicContentSize" width="189" height="36"/>
         </designable>
+        <designable name="Hee-Xe-gpx">
+            <size key="intrinsicContentSize" width="98" height="34"/>
+        </designable>
+        <designable name="JRX-8l-25a">
+            <size key="intrinsicContentSize" width="197.5" height="34"/>
+        </designable>
+        <designable name="Jfo-8v-BFg">
+            <size key="intrinsicContentSize" width="166.5" height="34"/>
+        </designable>
+        <designable name="QNB-H6-b2P">
+            <size key="intrinsicContentSize" width="84" height="34"/>
+        </designable>
+        <designable name="TSB-vi-Th4">
+            <size key="intrinsicContentSize" width="66" height="34"/>
+        </designable>
+        <designable name="TXl-nH-ewC">
+            <size key="intrinsicContentSize" width="124" height="34"/>
+        </designable>
+        <designable name="UFN-q8-Bzx">
+            <size key="intrinsicContentSize" width="51.5" height="34"/>
+        </designable>
+        <designable name="UUJ-OB-dGi">
+            <size key="intrinsicContentSize" width="121.5" height="34"/>
+        </designable>
+        <designable name="YNu-FG-y2d">
+            <size key="intrinsicContentSize" width="135.5" height="34"/>
+        </designable>
         <designable name="ZOf-Pp-6el">
             <size key="intrinsicContentSize" width="140.5" height="24"/>
         </designable>
+        <designable name="aNI-jQ-E95">
+            <size key="intrinsicContentSize" width="144" height="34"/>
+        </designable>
+        <designable name="aju-Wj-Sn6">
+            <size key="intrinsicContentSize" width="140.5" height="34"/>
+        </designable>
+        <designable name="cw8-nv-bZk">
+            <size key="intrinsicContentSize" width="98.5" height="34"/>
+        </designable>
+        <designable name="d4j-r3-x3r">
+            <size key="intrinsicContentSize" width="124" height="34"/>
+        </designable>
+        <designable name="dJb-4J-CfL">
+            <size key="intrinsicContentSize" width="169" height="34"/>
+        </designable>
+        <designable name="dqC-x1-gOF">
+            <size key="intrinsicContentSize" width="92" height="34"/>
+        </designable>
+        <designable name="e7f-Lp-83S">
+            <size key="intrinsicContentSize" width="203" height="34"/>
+        </designable>
+        <designable name="f5c-Ll-Wtc">
+            <size key="intrinsicContentSize" width="174" height="34"/>
+        </designable>
+        <designable name="gJE-ht-BLj">
+            <size key="intrinsicContentSize" width="120.5" height="34"/>
+        </designable>
         <designable name="h25-YG-dSp">
             <size key="intrinsicContentSize" width="146" height="36"/>
+        </designable>
+        <designable name="hgr-PT-Ile">
+            <size key="intrinsicContentSize" width="140.5" height="34"/>
         </designable>
         <designable name="iej-fl-wVP">
             <size key="intrinsicContentSize" width="149" height="36"/>
@@ -3154,8 +3229,17 @@ dalam berbagai bidang</string>
         <designable name="k7g-jq-0Fe">
             <size key="intrinsicContentSize" width="191" height="36"/>
         </designable>
+        <designable name="knZ-lp-9BA">
+            <size key="intrinsicContentSize" width="129.5" height="34"/>
+        </designable>
+        <designable name="s4h-74-Huq">
+            <size key="intrinsicContentSize" width="81.5" height="34"/>
+        </designable>
         <designable name="s8M-Fj-6c2">
             <size key="intrinsicContentSize" width="159" height="36"/>
+        </designable>
+        <designable name="yUj-n9-Cr5">
+            <size key="intrinsicContentSize" width="142" height="34"/>
         </designable>
     </designables>
     <resources>

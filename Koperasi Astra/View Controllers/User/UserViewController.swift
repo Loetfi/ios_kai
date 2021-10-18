@@ -12,6 +12,9 @@ class UserViewController: BaseViewController {
 
     @IBOutlet weak var navBar: NavigationBar!
     @IBOutlet weak var userMenuTableView: UITableView!
+    @IBOutlet weak var lblNomorAnggota: UILabel!
+    @IBOutlet weak var lblNik: UILabel!
+    @IBOutlet weak var lblJoinDate: UILabel!
     
     let vmUser = UserAuthViewModel()
     var titleList = [
@@ -41,6 +44,35 @@ class UserViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         navBar.title = "User"
         navBar.isLeftButtonHidden = true
+        getUserDetail()
+    }
+    
+    func getUserDetail() {
+        showLoading()
+        vmUser.getUserDetails(
+            body: ["id":userId],
+            onSuccess: { response,message in
+                self.hideLoading()
+                let nomorKoperasi = response.profile?.idUserProfile ?? 0
+                let npk = response.profile?.idKoperasi ?? ""
+                let joinDate = response.profile?.dateBecomeMember ?? ""
+
+                let fullDate    = joinDate
+                let fullDateArr = fullDate.components(separatedBy: " ")
+
+                let date    = fullDateArr[0]
+                let hours = fullDateArr[1]
+                
+                self.lblNik.text = npk
+                self.lblNomorAnggota.text = "\(nomorKoperasi)"
+                self.lblJoinDate.text = date
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            })
     }
     
     func setupTableView() {

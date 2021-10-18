@@ -235,6 +235,8 @@
                     </view>
                     <connections>
                         <outlet property="cvListPulsa" destination="pwZ-KE-D4f" id="kHC-Fw-vpM"/>
+                        <outlet property="ivOperator" destination="pT6-yE-IoJ" id="yLO-GB-L8E"/>
+                        <outlet property="lblOperator" destination="Whw-kl-dDQ" id="kIp-l2-Dwc"/>
                         <outlet property="lblPrice" destination="X5H-wz-0s6" id="BbX-MT-vhS"/>
                         <outlet property="navigationBar" destination="YKE-P9-0ir" id="730-tX-88s"/>
                         <outlet property="tfPhone" destination="IVZ-Rl-Fg3" id="Knh-31-LFp"/>

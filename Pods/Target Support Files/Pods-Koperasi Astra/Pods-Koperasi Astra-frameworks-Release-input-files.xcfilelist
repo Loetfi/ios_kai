@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Koperasi Astra/Pods-Koperasi Astra-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework
 ${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
 ${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
 ${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework
