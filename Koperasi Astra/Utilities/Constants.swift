@@ -57,7 +57,7 @@ class Constants {
     static let checkPhoneOperator = "/order/check-phone"
     static let orderPaymentToBiller = "/order​/payment-to-biller"
     static let customerList = "/order​/customer​/list"
-    static let orderBiller = "/order​/biller"
+    static let orderBiller = "/order/biller"
     
     static let dokuVaNotify = "/doku/va/notify"
     static let dokuVaInqiury = "/doku/va/inquiry"

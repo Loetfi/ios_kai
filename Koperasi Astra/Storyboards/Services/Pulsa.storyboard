@@ -1353,7 +1353,9 @@ kode Prefix (8641) + 12 digit kode bayar</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblBankProvider" destination="hRw-sA-whR" id="DLx-7e-r2u"/>
                         <outlet property="lblPrice" destination="uNI-ld-DMS" id="WNw-hI-1lE"/>
+                        <outlet property="lblVaNumber" destination="D7w-2v-VB2" id="LPI-zr-xHK"/>
                         <outlet property="navigationBar" destination="9ad-TS-BZw" id="h06-kV-aYo"/>
                         <outlet property="vAtmBersama" destination="mBy-E9-gq8" id="K1I-FQ-esU"/>
                         <outlet property="vMobileInternet" destination="qzM-1A-ysV" id="q3h-HV-JUA"/>
@@ -1612,7 +1614,7 @@ kode Prefix (8641) + 12 digit kode bayar</string>
             <size key="intrinsicContentSize" width="215" height="36"/>
         </designable>
         <designable name="IVZ-Rl-Fg3">
-            <size key="intrinsicContentSize" width="378" height="44.913671875000006"/>
+            <size key="intrinsicContentSize" width="236.5" height="34"/>
         </designable>
         <designable name="TOr-8b-sAq">
             <size key="intrinsicContentSize" width="93" height="33"/>

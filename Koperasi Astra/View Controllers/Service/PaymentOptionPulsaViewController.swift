@@ -17,7 +17,8 @@ class PaymentOptionPulsaViewController: BaseViewController {
     var phoneNumber = ""
     var price = ""
     let vmLoan = LoanViewModel()
-    
+    let vmBiller = BillerViewModel()
+
     var switchFlag: Bool = false {
         didSet{
             if switchFlag {
@@ -96,6 +97,95 @@ class PaymentOptionPulsaViewController: BaseViewController {
             })
     }
     
+    var billId = ""
+    var billerId = ""
+    var billerName = ""
+    var billerTrx = 0
+    var categoryId = ""
+    var idChannel = ""
+    var inquiryId = ""
+    var productDetails = ""
+    var productId = 0
+    var productImagePath = ""
+    var productName = ""
+    var quantity = 0
+    var sellPrice = 0
+    var systrace = 0
+    var idDeliveryType = ""
+    var idUserCompany = 0
+    var idWorkflowStatus = ""
+    var nameDeliveryType = ""
+    var idPaymentType = ""
+    var identifierNumber = 0
+    
+    func postBillerVa() {
+        self.showLoading()
+        let parse = price.replacingOccurrences(of: ".00", with: "")
+        let totalPayment = parse.replacingOccurrences(of: "Rp ", with: "")
+//        let payment = "payment": ["id_payment_type" :"PAY003",
+//                                   "identifier_number": 11,
+//                                   "total_payment": "\(totalPayment)"]
+//        ]
+        let body = [
+            "cart": [[
+                  "account_number" : phoneNumber,
+                  "additional_data_1" : "Oke",
+                  "additional_data_2" : "Oke",
+                  "additional_data_3" : "Oke",
+                  "base_price" : "\(totalPayment).00",
+                  "bill_id" : billId,
+                  "biller_id" : billerId,
+                  "biller_name" : billerName,
+                  "billertrx": 1,
+                  "category_id": "CATBILLER",
+                  "id_channel": "CHN0001",
+                  "inquiry_id": inquiryId,
+                  "product_details": productDetails,
+                  "product_id": productId,
+                  "product_image_path": productImagePath,
+                  "product_name": productName,
+                  "quantity": 1,
+                  "sell_price": Int(totalPayment) ?? 0,
+                  "systrace": systrace,
+                  "totalPayment": Int(totalPayment) ?? 0
+              ]],
+              "id_delivery_type": "DLV001",
+              "id_user_company": 71,
+              "id_workflow_status": "ODSTS01",
+              "name_delivery_type": "Direct",
+            "payment": [[
+                  "id_payment_type" :"PAY003",
+                  "identifier_number": 11,
+                  "total_payment": "\(totalPayment)"
+              ]],
+            "total_billing": Int(totalPayment) ?? 0
+        ] as [String : Any]
+        vmBiller.postOrderBiller(
+            body: body,
+            onSuccess: { response,message in
+                self.hideLoading()
+                if self.switchFlag {
+                    let vc = StoryboardScene.Pulsa.PaymentSaldoViewController.instantiate()
+                    vc.price = self.price
+                    vc.phoneNumber = self.phoneNumber
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    let vc = StoryboardScene.Pulsa.PaymentVaViewController.instantiate()
+                    vc.price = self.price
+                    vc.phoneNumber = self.phoneNumber
+                    vc.vaNumber = response.vaNumber ?? ""
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }, onError: { error in
+                self.hideLoading()
+                self.showToast(message: error)
+            }, onFailed: { failed in
+                self.hideLoading()
+                self.showToast(message: failed)
+            }
+        )
+    }
+    
     @IBAction func checklistButtonAction1(_ sender: Any) {
         if switchFlag {
             switchFlag = false
@@ -117,16 +207,14 @@ class PaymentOptionPulsaViewController: BaseViewController {
     }
     
     @IBAction func nextButtonTap(_ sender: Any) {
-        if switchFlag {
-            let vc = StoryboardScene.Pulsa.PaymentSaldoViewController.instantiate()
-            vc.price = price
-            vc.phoneNumber = phoneNumber
-            self.navigationController?.pushViewController(vc, animated: true)
+        if self.switchFlag {
+            self.showToast(message: "Fitur ini belum tersedia")
+//            let vc = StoryboardScene.Pulsa.PaymentSaldoViewController.instantiate()
+//            vc.price = self.price
+//            vc.phoneNumber = self.phoneNumber
+//            self.navigationController?.pushViewController(vc, animated: true)
         } else {
-            let vc = StoryboardScene.Pulsa.PaymentVaViewController.instantiate()
-            vc.price = price
-            vc.phoneNumber = phoneNumber
-            self.navigationController?.pushViewController(vc, animated: true)
+            postBillerVa()
         }
     }
     

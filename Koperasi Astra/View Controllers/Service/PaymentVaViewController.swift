@@ -21,9 +21,16 @@ class PaymentVaViewController: BaseViewController {
     @IBOutlet weak var navigationBar: NavigationBar!
     
     @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var lblVaNumber: UILabel!
+    @IBOutlet weak var lblBankProvider: UILabel!
     
     var phoneNumber = ""
     var price = ""
+    var vaNumber = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.lblVaNumber.text = vaNumber
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

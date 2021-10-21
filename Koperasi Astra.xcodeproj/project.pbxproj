@@ -129,6 +129,7 @@
 		EEF21B32271C38A300AD419B /* MicroloanBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF21B31271C38A300AD419B /* MicroloanBalance.swift */; };
 		EEF21B34271D320600AD419B /* MasterDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF21B33271D320600AD419B /* MasterDataViewModel.swift */; };
 		EEF21B36271D323E00AD419B /* MasterCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF21B35271D323E00AD419B /* MasterCompany.swift */; };
+		EEF21B382721602F00AD419B /* OrderBiller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF21B372721602F00AD419B /* OrderBiller.swift */; };
 		EEFE5158270F3CD700B8FF37 /* UserTransaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEFE5157270F3CD700B8FF37 /* UserTransaction.storyboard */; };
 		EEFE515B270F5D7A00B8FF37 /* PopupAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFE5159270F5D7A00B8FF37 /* PopupAlertViewController.swift */; };
 		EEFE515C270F5D7A00B8FF37 /* PopupAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFE515A270F5D7A00B8FF37 /* PopupAlertViewController.xib */; };
@@ -261,6 +262,7 @@
 		EEF21B31271C38A300AD419B /* MicroloanBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroloanBalance.swift; sourceTree = "<group>"; };
 		EEF21B33271D320600AD419B /* MasterDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDataViewModel.swift; sourceTree = "<group>"; };
 		EEF21B35271D323E00AD419B /* MasterCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCompany.swift; sourceTree = "<group>"; };
+		EEF21B372721602F00AD419B /* OrderBiller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBiller.swift; sourceTree = "<group>"; };
 		EEFE5157270F3CD700B8FF37 /* UserTransaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTransaction.storyboard; sourceTree = "<group>"; };
 		EEFE5159270F5D7A00B8FF37 /* PopupAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlertViewController.swift; sourceTree = "<group>"; };
 		EEFE515A270F5D7A00B8FF37 /* PopupAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupAlertViewController.xib; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				EE6B67532717D9AE00F1DAED /* bodyBillDetails.swift */,
 				EEF21B31271C38A300AD419B /* MicroloanBalance.swift */,
 				EEF21B35271D323E00AD419B /* MasterCompany.swift */,
+				EEF21B372721602F00AD419B /* OrderBiller.swift */,
 			);
 			path = "Model Data";
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				EE6B67522717D97700F1DAED /* BillDetails.swift in Sources */,
 				EECE83ED2695BD8B00FBCA76 /* OtpViewController.swift in Sources */,
 				EE766129270AE0760045510E /* DetailLoanViewController.swift in Sources */,
+				EEF21B382721602F00AD419B /* OrderBiller.swift in Sources */,
 				EE24FC5C26A46A2900A44307 /* UserViewController.swift in Sources */,
 				EE3496AA2704E63600233C48 /* ContactUsViewController.swift in Sources */,
 				EEFE515B270F5D7A00B8FF37 /* PopupAlertViewController.swift in Sources */,

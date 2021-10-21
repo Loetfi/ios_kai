@@ -37,6 +37,9 @@ class InputPhoneNumberViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         setupCell()
         navigationBarSetup(navBar: navigationBar, title: "Pulsa", hideBackButton: false)
+        
+        self.billDetails.removeAll()
+        self.cvListPulsa.reloadData()
     }
     
     func getPhoneOperator(phoneCode: String) {
@@ -49,9 +52,17 @@ class InputPhoneNumberViewController: BaseViewController {
                     self.lblOperator.text = "\(item.providerPhoneCode ?? "".uppercased()) \(item.providerPhoneName ?? "")"
                     if self.isPaketData {
                         self.postPulsaDetails(billerId: item.billersIdPaketdata ?? "", accountNumber: self.tfPhone.text ?? "")
+                        self.billerId = item.billersIdPaketdata ?? ""
+
                     } else {
                         self.postPulsaDetails(billerId: item.billersIdPulsa ?? "", accountNumber: self.tfPhone.text ?? "")
+                        self.billerId = item.billersIdPulsa ?? ""
+
                     }
+                    self.productId = item.masterProviderPhoneId ?? 0
+                    self.productImagePath = item.providerPhoneImage ?? ""
+                    self.productName = item.providerPhoneCode ?? ""
+
                 }
                 self.hideLoading()
             }, onError: { error in
@@ -72,6 +83,9 @@ class InputPhoneNumberViewController: BaseViewController {
                 self.hideLoading()
                 self.billDetails.removeAll()
                 self.billDetails.append(contentsOf: response.response?.billDetails ?? [])
+                self.systrace = response.trace?.systrace ?? 0
+                self.inquiryId = response.response?.inquiryId ?? ""
+                self.productDetails = response.response?.billerName ?? ""
                 self.cvListPulsa.reloadData()
             }, onError: { error in
                 self.hideLoading()
@@ -107,6 +121,27 @@ class InputPhoneNumberViewController: BaseViewController {
             }
         }
     }
+    var billId = ""
+    var billerId = ""
+    var billerName = ""
+    var billerTrx = 0
+    var categoryId = ""
+    var idChannel = ""
+    var inquiryId = ""
+    var productDetails = ""
+    var productId = 0
+    var productImagePath = ""
+    var productName = ""
+    var quantity = 0
+    var sellPrice = 0
+    var systrace = 0
+    
+    var idDeliveryType = ""
+    var idUserCompany = 0
+    var idWorkflowStatus = ""
+    var nameDeliveryType = ""
+    var idPaymentType = ""
+    var identifierNumber = 0
     
     @IBAction func nextButtonTap(_ sender: Any) {
         if tfPhone.text == "" {
@@ -118,6 +153,27 @@ class InputPhoneNumberViewController: BaseViewController {
             vc.phoneNumber = tfPhone.text ?? ""
             vc.price = lblPrice.text ?? ""
             vc.content = content
+            //dataAvailable
+            vc.billerId = billerId //billersIdPulsa / paketData
+            vc.productId = productId //masterProfiderphoneid
+            vc.productImagePath = productImagePath
+            vc.productName = productName // providerPhoneCode
+            vc.systrace = systrace
+            vc.billId = billId
+            vc.inquiryId = inquiryId
+            vc.billerName = billerName // title
+            vc.productDetails = productDetails //billername
+
+            vc.billerTrx = billerTrx //default 1
+            vc.categoryId = categoryId //default CATBILLER
+            vc.idChannel = idChannel //default CHN0001
+            vc.quantity = quantity //default 1
+            vc.idDeliveryType = idDeliveryType//default DLV001
+            vc.idUserCompany = idUserCompany //default 71
+            vc.idWorkflowStatus = idWorkflowStatus //default DLV001
+            vc.nameDeliveryType = nameDeliveryType //default Direct
+            vc.idPaymentType = idPaymentType // default PAY003
+            vc.identifierNumber = identifierNumber //default 11
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -150,6 +206,13 @@ extension InputPhoneNumberViewController: UICollectionViewDataSource, UICollisio
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! PulsaCollectionViewCell
+//        var priceParse = ""
+//        let price = billDetails[indexPath.row].body
+//        for item in price {
+//            priceParse = item
+//        }
+//        let parse = priceParse.replacingOccurrences(of: "DENOM           : ", with: "")
+        
         if isPaketData {
             cell.vBorder.backgroundColor = UIColor(named: "greenBlur03")
             cell.vBorder.borderColor = UIColor(named: "green03")
@@ -161,6 +224,9 @@ extension InputPhoneNumberViewController: UICollectionViewDataSource, UICollisio
             self.lblPrice.text = "Rp \(billDetails[indexPath.row].totalAmount ?? "")"
             self.content = billDetails[indexPath.row].title ?? ""
         }
+        
+        self.billId = billDetails[indexPath.row].billId ?? ""
+        self.billerName = billDetails[indexPath.row].title ?? ""
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -181,6 +247,8 @@ extension InputPhoneNumberViewController: UITextFieldDelegate {
         if textField.text?.count ?? 0 >= 7 {
             let phoneDigit = textField.text?.prefix(4)
             performAction(phone: "\(phoneDigit ?? "")")
+            self.billDetails.removeAll()
+            self.cvListPulsa.reloadData()
             return true
         } else {
             showToast(message: "phone number minimal 7 digit")

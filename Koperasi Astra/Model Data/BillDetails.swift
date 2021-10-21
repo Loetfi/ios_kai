@@ -14,7 +14,7 @@ struct BillDetails: Codable {
     let title: String?
     let totalAmount: String?
     let descriptions: String?
-    let body: [String]?
+    let body: [String]
 
     enum CodingKeys: String, CodingKey {
         case adminFee = "adminfee"
